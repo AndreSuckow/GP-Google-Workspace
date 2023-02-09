@@ -95,6 +95,8 @@ import pic4 from '../../assets/images/google/workspace/publicoAlvo/pic4.png'
 import pic5 from '../../assets/images/google/workspace/publicoAlvo/pic5.png'
 import pic6 from '../../assets/images/google/workspace/publicoAlvo/pic6.png'
 import Video from '../../components/Google-Components/Video';
+import videoSource from '../../assets/videos/googleworkspace.mp4'
+
 
 
 // Impacto econômico --> carrousel horizontal 5
@@ -105,8 +107,13 @@ import tabela from '../../assets/images/google/workspace/oferta/tabela.png'
 
 // Business --> carrousel horizontal 6
 import clickSetas from '../../assets/images/google/workspace/business/clickSetas.png'
+import manWoman from '../../assets/images/google/workspace/business/womanManPc.png'
+import twoMan from '../../assets/images/google/workspace/business/happyMans.png'
+import womanCat from '../../assets/images/google/workspace/business/womanCat.png'
 
 // Enterprise --> carrousel horizontal 7
+import blackblack from '../../assets/images/google/workspace/Enterprise/blakblack.png'
+import white from '../../assets/images/google/workspace/Enterprise/white.png'
 
 // Na prática 3 --> carrousel horizontal 8
 
@@ -242,13 +249,7 @@ const GooglePage = () => {
         },
         {
             title: '1.000',
-            text: `instâncias de   
-            <button id="tooltip-2"
-                onMouseEnter={() => {
-                    !isOpen && setIsOpen(true)
-                    setAnchorId('tooltip-2');
-                }}>
-                <span>malware</span>
+            text: `instâncias de <span>malware</span>
             </button> suspeitos são comunicadas aos usuários.`,
         }
     ]
@@ -273,23 +274,50 @@ const GooglePage = () => {
     const carrouselData6 = [
         {
             title: 'Business Starter',
-            text: `Com armazenamento de conta de 30 GB por utilizador, o plano inclui os principais aplicativos do Google, como Gmail, Calendar, Docs e Chat.
+            text: `<span>Com</span> armazenamento de conta de <span>30 GB</span> por utilizador, o plano inclui os principais aplicativos do Google, como Gmail, Calendar, Docs e Chat.
             
             As reuniões no Meet contam com o limite de 300 usuários, além de possuir funcionalidades extras, como desfoque de fundo, quadro branco e legendas ao vivo.`,
-            imgCarrousel: imagemCarrousel1
+            imgCarrousel: manWoman
         },
         {
-            title: 'Transformação Digital',
-            text: `Impacto na cultura da empresa promovendo maior produtividade por meio de um mindset digital, que significa usar a tecnologia como aliada a prática de novas estratégias corporativas.`,
-            imgCarrousel: imagemCarrousel2
+            title: 'Business Standard',
+            text: `Com armazenamento de conta de <span>2 TB</span>
+            por utilizador, o plano inclui os principais aplicativos do Google.<br><br>
+            
+            As reuniões no Meet contam com o limite de <span>300 usuários</span>, gravação e QA, </span>Chat</span> com relatórios de segurança e controle, além do <span>PIN</span> de verificação de compartilhamento e o <span>armazenamento compartilhado</span> em equipe.`,
+
+            imgCarrousel: twoMan
         },
         {
-            title: 'Versão Única',
-            text: `A garantia de que todos da equipe poderão trabalhar na versão mais recente de um arquivo, em tempo real, sendo acessada de qualquer lugar.`,
-            imgCarrousel: imagemCarrousel3
+            title: 'Business Plus',
+            text: `Com armazenamento de conta de <span>5 TB</span> por utilizador, o plano inclui as mesmas funcionalidades do Standard, acrescentadas de <span>tradução simultânea</span> das chamadas do Meet, <span>Vault</span>, <span>DLP Básico</span> e <span>gerenciamento avançado de endpoint</span>.`,
+            imgCarrousel: womanCat
         },
     ]
 
+    const carrouselData7 = [
+        {
+            title: 'Enterprise Essentials',
+            text: `Com armazenamento de conta de <span>1 TB</span> por utilizador em pool, o plano conta com Editors, Chat e Meet, com limite de até <span>150 usuários</span> em reunião.
+            
+            Além disso, também possui a funcionalidade de <span>drive compartilhado</span> para equipes.`,
+            imgCarrousel: blackblack
+        },
+        {
+            title: 'Enterprise Standard',
+            text: `Com armazenamento de conta <span>ilimitado</span>, possui as mesmas funcionalidades do plano Essentials, acrescentadas de reuniões 
+            no Meet para <span>250 usuários<span> e transmissões para até <span>10 mil<span> pessoas, pacote de segurança com <span>Vault, DLP Avançado,
+            Cloud Identity Premium (CIP) e controle e personalização de empresas avançados</span>.`,
+
+            imgCarrousel: white
+        },
+        {
+            title: 'Enterprise Plus',
+            text: `Com armazenamento de conta <span>ilimitado</span>, possui as mesmas funcionalidades do plano Standard, acrescentadas de transmissões no Meet para até <span>100 mil</span> pessoas, <span>cancelamento de ruído</span> em chamadas, pacote de segurança com <span>Certificado Compliance, Security Center, 
+            AppSheetPRO e Work Insights.</span>`,
+            imgCarrousel: womanCat
+        },
+    ]
 
     const showDownSliderGoogleData = [
         {
@@ -523,7 +551,7 @@ const GooglePage = () => {
 
                         <TitleGoogle
                             title="Flexibilidade"
-                            titleConfig={{ textAlign: 'center', color: '#FFB84C' }}
+                            titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '4rem' }}
                             paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
                             spanClass='span-orange'>
                             Os recursos <span>ajustáveis e práticos</span>,
@@ -589,10 +617,8 @@ const GooglePage = () => {
                     <Container>
                         <TitleGoogle
                             title="Na Prática"
-                            titleConfig={{ textAlign: 'center', color: '#FFB84C' }}
-                            paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
-                            spanClass='span-red'>
-
+                            titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '-2rem' }}
+                            paragraphConfig={{ textAlign: 'center', color: '#ffff' }}>
                             Durante o curso, você conhecerá algumas
                             <br></br>
                             histórias que ajudarão a entender um pouco<br></br>
@@ -601,42 +627,34 @@ const GooglePage = () => {
                             a dia de diferentes tipos de negócio.
                         </TitleGoogle>
                         <CarrouselGoogle data={carrouselData2} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo2' />
-                    </Container>
-                </Section>
-
-                <Section>
-                    <Container>
                         <TitleGoogle
                             title="Produtividade"
-                            titleConfig={{ textAlign: 'left', color: '#FFB84C' }}
+                            titleConfig={{ textAlign: 'left', color: '#FFB84C', marginTop: '6rem' }}
                             paragraphConfig={{ textAlign: 'left', color: '#ffff' }}>
-
-                            Com uma gama de ferramentas que funcionam
-                            de forma integrada, o Workspace se evidencia
-                            por ofertar com uma única contratação e preço,
+                            Com uma gama de ferramentas que funcionam<br></br>
+                            de forma integrada, o Workspace se evidencia<br></br>
+                            por ofertar com uma única contratação e preço,<br></br>
                             um alicerce capaz de simplificar as rotinas da empresa.
                         </TitleGoogle>
                         <img src={clickIcon} alt="" className='clickIcon' />
                         <TabViewWithImage data={TabviewWithImageData1}></TabViewWithImage>
                         <TabViewWithImage data={TabviewWithImageData2} direction="row-reverse"></TabViewWithImage>
-
-
                         <TitleGoogle
                             title="Na Prática"
                             titleConfig={{ textAlign: 'center', color: '#FFB84C' }}
                             paragraphConfig={{ textAlign: 'center', color: '#ffff' }}>
-
                             O Google Workspace pode ser aplicado<br></br>
                             nos mais diferentes cenários possíveis.
                         </TitleGoogle>
                         <CarrouselGoogle data={carrouselData3} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo2' />
                     </Container>
                 </Section>
+
                 <Section bg={bg2branca2} bgOrientation='center center' bgSize='100% 100%'>
                     <Container>
                         <TitleGoogle
                             title="Segurança"
-                            titleConfig={{ textAlign: 'left', color: '#660099' }}
+                            titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '4rem' }}
                             paragraphConfig={{ textAlign: 'left', color: 'black' }}>
                             A ausência de um suporte de segurança eficiente
                             na administração de dados na nuvem esbarra
@@ -653,13 +671,17 @@ const GooglePage = () => {
                             <div>
                                 <TitleGoogle
                                     title="DLP"
-                                    titleConfig={{ textAlign: 'left', color: '#660099' }}
-                                    paragraphConfig={{ textAlign: 'left', color: 'black' }}>
-                                    Para reforçar a segurança do usuário,
-                                    o Workspace conta com o DLP, sistema
-                                    de prevenção de perda de dados.<br></br><br></br>
+                                    titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '4rem' }}
+                                    paragraphConfig={{ textAlign: 'left', color: 'black' }}
+                                    spanClass='span-purple'>
 
-                                    Com essa camada protetiva, o serviço assegura informações críticas e sensíveis, obstruindo acessos inapropriados ou adulterações.<br></br><br></br>
+                                    Para reforçar a segurança do usuário,<br></br>
+                                    o Workspace conta com o DLP, <span>sistema<br></br>
+                                        de prevenção de perda de dados</span>.<br></br><br></br>
+
+                                    Com essa camada protetiva, o serviço<br></br>
+                                    assegura informações críticas e sensíveis,<br></br>
+                                    obstruindo acessos inapropriados ou adulterações.<br></br><br></br>
 
                                     Essa prevenção reduz riscos, como:
                                 </TitleGoogle>
@@ -688,8 +710,8 @@ const GooglePage = () => {
                 <Section>
                     <Container>
                         <TitleGoogle
-                            title="Na Prática"
-                            titleConfig={{ textAlign: 'center', color: '#FFB84C' }}
+                            title="Público - Alvo"
+                            titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '-4rem'}}
                             paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
                             spanClass='span-orange'>
                             Buscando auxiliar demandas de produtividade<br></br>
@@ -712,7 +734,7 @@ const GooglePage = () => {
                             Workspace pode se tornar um <span className='span-orange'>aliado produtivo</span>?
                         </p>
                         <div className='video'>
-                            <Video></Video>
+                            <Video source={videoSource}></Video>
                         </div>
                     </Container>
                 </Section>
@@ -721,8 +743,8 @@ const GooglePage = () => {
                     <Container>
                         <div className='displayFlex'>
                             <TitleGoogle
-                                title="Na Prática"
-                                titleConfig={{ textAlign: 'left', color: '#FFB84C' }}
+                                title="Impacto Econômico"
+                                titleConfig={{ textAlign: 'left', color: '#FFB84C', marginTop: ''}}
                                 paragraphConfig={{ textAlign: 'left', color: '#ffff' }}
                                 spanClass='span-orange'>
                                 Podemos considerar como trunfos<br></br>
@@ -744,7 +766,7 @@ const GooglePage = () => {
                         <CarrouselGoogle data={carrouselData5} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo4' />
                         <TitleGoogle
                             title="Tipos de Oferta"
-                            titleConfig={{ textAlign: 'center', color: '#FFB84C' }}
+                            titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '8rem' }}
                             paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
                             spanClass='span-orange'>
                             Distribuído em planos mensais ou anuais, as ofertas<br></br>
@@ -763,15 +785,41 @@ const GooglePage = () => {
                     <Container>
                         <TitleGoogle
                             title="Business"
-                            titleConfig={{ textAlign: 'left', color: '#660099' }}
+                            titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '4rem' }}
                             paragraphConfig={{ textAlign: 'left', color: 'black' }}>
-                            Voltado para empresas de médio porte, a família Business engloba uma estrutura propícia para
+                            Voltado para empresas de médio porte, a família<br></br>
+                            Business engloba uma estrutura propícia para<br></br>
                             a colaboração e defesa de dados.
                         </TitleGoogle>
                         <div className='div-flex5'>
                             <CarrouselGoogle data={carrouselData6} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' />
                             <img src={clickSetas} alt="" className='clickSetas' />
                         </div>
+                        <TitleGoogle
+                            title="Enterprise"
+                            titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '6rem' }}
+                            paragraphConfig={{ textAlign: 'left', color: 'black' }}>
+                            Aconselhável para empresas de grande porte,<br></br>
+                            a família Enterprise incorpora recursos para negócios<br></br>
+                            dependentes de uma infraestrutura mais vigorosa.
+                        </TitleGoogle>
+                        <div className='div-flex5'>
+                            <CarrouselGoogle data={carrouselData7} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' />
+                            <img src={clickSetas} alt="" className='clickSetas' />
+                        </div>
+                    </Container>
+                </Section>
+                <Section>
+                    <Container>
+                        <TitleGoogle
+                            title="Tipos de Oferta"
+                            titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '-4rem' }}
+                            paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
+                            spanClass='span-orange'>
+                            Distribuído em planos mensais ou anuais, as ofertas<br></br>
+                            do Workspace são separadas pelas seguintes famílias:<br></br>
+                            <span>Business</span> e <span>Enterprise</span>.<br></br><br></br>
+                        </TitleGoogle>
                     </Container>
                 </Section>
 

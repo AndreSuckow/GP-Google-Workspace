@@ -17,7 +17,7 @@ const getMinutesFromSeconds = totalTime => {
 }
 
 const Video = ({source, title}) => {
-    const [videoElement, setVideoElement] = useState(null)
+     const [videoElement, setVideoElement] = useState(null)
 
     const [isPlaying, setIsPlaying] = useState(false)
 
