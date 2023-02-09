@@ -95,7 +95,7 @@ import pic4 from '../../assets/images/google/workspace/publicoAlvo/pic4.png'
 import pic5 from '../../assets/images/google/workspace/publicoAlvo/pic5.png'
 import pic6 from '../../assets/images/google/workspace/publicoAlvo/pic6.png'
 import Video from '../../components/Google-Components/Video';
-import videoSource from '../../assets/videos/googleworkspace.mp4'
+// import videoSource from '../../assets/videos/googleworkspace.mp4'
 
 
 
@@ -145,6 +145,9 @@ import galera from '../../assets/images/google/workspace/solucao/solucao.png'
 
 // Atendimento --> ShowContentIcon
 import happyman from '../../assets/images/google/workspace/atendimento/happyman.png'
+import happywoman from '../../assets/images/google/workspace/atendimento/happywoman.png'
+import HorizontalAccordion from '../../components/Sections-Components/HorizontalAccordion'
+import ClickTip from '../../components/Sections-Components/ClickTip'
 // Na prática 4 --> carrousel horizontal 9
 
 // Assinatura
@@ -840,7 +843,7 @@ const GooglePage = () => {
                             Workspace pode se tornar um <span className='span-orange'>aliado produtivo</span>?
                         </p>
                         <div className='video'>
-                            <Video source={videoSource}></Video>
+                            <Video source={''}></Video> 
                         </div>
 
                         <div className='displayFlex'>
@@ -1003,6 +1006,20 @@ const GooglePage = () => {
                             </TitleGoogle>
                             <img src={happyman} alt="" />
                         </div>
+                        <div className='flex-atendimento'>
+                            <img src={happywoman} alt="" />
+                            <TitleGoogle
+                                title="Forma de pagamento"
+                                titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '6rem' }}
+                                paragraphConfig={{ textAlign: 'left', color: 'black' }}
+                                spanClass='span-purple'>
+                                Com a parceria firmada com o Google, a Vivo conta com benefícios em relação à fatura 
+                                do serviço, ofertando maior quantidade 
+                                de meios de pagamento e preços equivalentes ao mercado local.<br></br>
+                                <HorizontalAccordion />
+                            </TitleGoogle>
+                        </div>
+                        <ClickTip text='Clique nos ícones para expandir as informações.' center />
                     </Container>
                 </Section>
             </div>
