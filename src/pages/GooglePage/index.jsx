@@ -144,7 +144,7 @@ import morena2 from '../../assets/images/google/workspace/eficiencia/morena2.png
 import galera from '../../assets/images/google/workspace/solucao/solucao.png'
 
 // Atendimento --> ShowContentIcon
-
+import happyman from '../../assets/images/google/workspace/atendimento/happyman.png'
 // Na prática 4 --> carrousel horizontal 9
 
 // Assinatura
@@ -966,14 +966,41 @@ const GooglePage = () => {
                             titleConfig={{ textAlign: 'center', color: '#f784da' }}
                             paragraphConfig={{ textAlign: 'left', color: '#ffff' }}
                             spanClass='span-orange'>
-                            
+
                             Pioneira no oferecimento de pacotes de internet para telefonia celular, a Vivo atua no Brasil desde 2003, sendo reconhecida por sua entrega de qualidade e competência. Referência em transformação digital, aumentou seu portfólio de acordo com as evoluções tecnológicas e a percepção das dores do mercado. <br></br><br></br>
-                            
+
                             Hoje, a empresa atua como um hub de soluções digitais, integrando os mais diferentes tipos de serviço.
                             Na Vivo, o cliente conta com vantagens ao contratar ou transferir seus serviços para a empresa.
                         </TitleGoogle>
-
                         <Tab data={tabData}></Tab>
+                    </Container>
+                </Section>
+                <Section bg={bg2branca2} bgOrientation='center center' bgSize='100% 100%'>
+                    <Container>
+                        <div className='flex-atendimento'>
+                            <TitleGoogle
+                                title="Atendimento"
+                                titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '6rem' }}
+                                paragraphConfig={{ textAlign: 'left', color: 'black' }}
+                                spanClass='span-purple'>
+
+                                Através da contratação com a Vivo, o cliente<br></br>
+                                adquire um serviço <span>internacionalmente</span><br></br>
+                                conhecido, sem qualquer temor com<br></br>
+                                <span>extensos prazos de retorno</span> de atendimento<br></br>
+                                ou <span>limitações</span> de seus funcionários quanto<br></br>
+                                a uma <span>língua estrangeira.</span><br></br><br></br>
+
+                                Uma equipe dedicada ao Workspace pode<br></br>
+                                ser contatada <span>24 horas por dia</span>, em <span>todos<br></br>
+                                    os dias da semana</span>, oferecendo suporte<br></br>
+                                em <span>português</span>. De maneira direta e acessível,<br></br>
+                                nossos colaboradores estão de prontidão<br></br>
+                                para tirar <span>dúvidas e solucionar</span> possíveis erros<br></br>
+                                que impactem a produtividade do cliente.
+                            </TitleGoogle>
+                            <img src={happyman} alt="" />
+                        </div>
                     </Container>
                 </Section>
             </div>

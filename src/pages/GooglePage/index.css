@@ -386,3 +386,15 @@
     margin: 0 auto;
     margin: 2rem 0;
 }
+
+.flex-atendimento {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.flex-atendimento img {
+    width: 40%;
+}
