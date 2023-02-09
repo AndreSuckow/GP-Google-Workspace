@@ -10,7 +10,7 @@ import arrowPrevDefault from '../../../assets/images/google/workspace/carrousel-
 import arrowNextDefault from '../../../assets/images/google/workspace/carrousel-1/arrow-left.png'
 
 
-const CarrouselGoogle = ({ data, arrowPrev = '', arrowNext = '', slideShow = 1, carrouselType = '' }) => {
+const CarrouselGoogle = ({ data, arrowPrev = '', arrowNext = '', slideShow = 1, carrouselType = '', vertical = false,}) => {
     const slider = useRef(null)
 
     const settings = {
@@ -19,6 +19,7 @@ const CarrouselGoogle = ({ data, arrowPrev = '', arrowNext = '', slideShow = 1, 
         infinite: true,
         speed: 500,
         slidesToShow: slideShow,
+        vertical: vertical,
         slidesToScroll: slideShow,
         // dotsClass: styles['slick-dots'],
         appendDots: dots => (

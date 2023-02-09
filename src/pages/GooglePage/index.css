@@ -317,3 +317,72 @@
     justify-content: center;
     flex-direction: column;
 }
+
+
+.div-flex-eficiencia{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+
+
+.div-flex-eficiencia .carrousel.estilo1 {
+    width: 100%;
+}
+
+.div-flex-eficiencia .estilo1 .item-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        flex-direction: column;
+        text-align: center;
+}
+
+.div-flex-eficiencia .estilo1 .item-content p {
+    font-family: 'officina';
+    font-size: 1.2rem !important;
+    color: #000;
+    font-weight: 100;
+    width: 85%;
+    margin: 1rem 1rem 3rem;
+}
+
+.div-flex-eficiencia .estilo1 .item-content h3 {
+    font-size: 4.0rem !important;
+}
+
+/* .div-flex-eficiencia .item-content p{
+    margin: 0;
+} */
+
+.div-flex-eficiencia .estilo1 .item-content img {
+    width: 85%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 1rem;
+}
+
+/* pra baixo / avança */
+.div-flex-eficiencia .carrousel .controls button.next {
+    width: 3rem;
+    transform: rotateZ(96deg) !important;
+} 
+
+/* pra cima / retrocede */
+.div-flex-eficiencia .carrousel .controls button.prev {
+    width: 3rem;
+    transform: rotateZ(90deg) !important;
+}
+
+.imagemCentralizada {
+    width: 100%;
+    margin: 0 auto;
+    margin: 2rem 0;
+}

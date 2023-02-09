@@ -136,7 +136,12 @@ import imgespecial from '../../assets/images/google/workspace/comercializacao/im
 
 // Eficiência --> carrousel de pé
 
+import cadeirante from '../../assets/images/google/workspace/eficiencia/1cadeirante.png'
+import morena1 from '../../assets/images/google/workspace/eficiencia/morena1.png'
+import morena2 from '../../assets/images/google/workspace/eficiencia/morena2.png'
+
 // Vivo é a solução --> click aparece conteudo
+import galera from '../../assets/images/google/workspace/solucao/solucao.png'
 
 // Atendimento --> ShowContentIcon
 
@@ -373,6 +378,27 @@ const GooglePage = () => {
         },
     ]
 
+
+    const carrouselData9 = [
+        {
+            title: `92%`,
+            text: `de usuários do Workspace afirmaram que a colaboração em tempo real se tornou um padrão em suas equipes`,
+            imgCarrousel: cadeirante
+        },
+        {
+            title: `55%`,
+            text: `dos usuários que criam <br>documentos colaborativos se<br> sentem mais produtivos`,
+
+            imgCarrousel: morena1
+        },
+        {
+            title: `20%`,
+            text: `de redução nos chamados<br> de suporte técnico`,
+            imgCarrousel: morena2
+        },
+    ]
+
+
     const showDownSliderGoogleData = [
         {
             image: image1,
@@ -574,15 +600,17 @@ const GooglePage = () => {
     const tabData = [
         {
             buttonText: 'Produtividade',
-            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat ut dolores veniam nemo quia repudiandae architecto iusto, aliquid sed voluptas quas magnam quod porro, sunt nostrum labore a amet.',
+            text: `A centralização de serviços na Vivo impacta diretamente na produtividade. Logo, o cliente não precisará administrar relações com 
+            um número maior de fornecedores do que ele realmente necessita.`,
         },
         {
             buttonText: 'Ofertas especias',
-            text: 'Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat ut dolores veniam nemo quia repudiandae architecto iusto, aliquid sed voluptas quas magnam quod porro, sunt nostrum labore a amet.',
+            text: `A contratação de um pacote de serviços na Vivo pode garantir condições especiais ao cliente, possibilitando economia na contratação de fornecedores.`,
         },
         {
             buttonText: 'Suporte',
-            text: 'Lorem3 ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat ut dolores veniam nemo quia repudiandae architecto iusto, aliquid sed voluptas quas magnam quod porro, sunt nostrum labore a amet.',
+            text: `Atendimento de qualidade, oferecendo suporte ao cliente 24 horas por dia, todos 
+            os dias da semana, inclusive nos feriados.`,
         },
 
     ]
@@ -911,25 +939,38 @@ const GooglePage = () => {
                             <img src={clickImagemInfo} alt="" className="click-expand-conceitos" />
                             <ShowDownSliderGoogle data={showDownSliderGoogleData4} />
                         </div>
+                        <div className='div-flex-eficiencia'>
+                            <TitleGoogle
+                                title="Eficiência"
+                                titleConfig={{ textAlign: 'left', color: '#FFB84C', marginTop: '6rem' }}
+                                paragraphConfig={{ textAlign: 'left', color: '#ffff' }}
+                                spanClass='span-orange'>
+                                Propiciando aumento produtivo e assertividade comunicativa nas operações laborais,
+                                o Workspace sustenta seu impacto através
+                                da <span>integração.</span>
+                                <br></br><br></br>Assim, promovendo um ambiente de trabalho mais comunicativo através da facilidade na adaptação
+                                à seus aplicativos.<br></br><br></br>
+                                Clique nas setas para conferir alguns dados disponibilizados pelo Google acerca do tema.
+                            </TitleGoogle>
+                            <CarrouselGoogle data={carrouselData9} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' vertical={true} />
+                        </div>
+
 
                     </Container>
                 </Section>
-
                 <Section>
                     <Container>
-
-                    </Container>
-                </Section>
-
-
-                <Section>
-                    <Container>
+                        <img src={galera} alt="" className='imagemCentralizada' />
                         <TitleGoogle
-                            title="Vivo é a solução"
+                            title="Vivo é a Solução!"
                             titleConfig={{ textAlign: 'center', color: '#f784da' }}
-                            paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
+                            paragraphConfig={{ textAlign: 'left', color: '#ffff' }}
                             spanClass='span-orange'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni hic ipsum nesciunt sequi deleniti soluta ea accusantium iste nihil, quod mollitia reprehenderit dignissimos quam fuga perferendis voluptatem. Reprehenderit, eius?
+                            
+                            Pioneira no oferecimento de pacotes de internet para telefonia celular, a Vivo atua no Brasil desde 2003, sendo reconhecida por sua entrega de qualidade e competência. Referência em transformação digital, aumentou seu portfólio de acordo com as evoluções tecnológicas e a percepção das dores do mercado. <br></br><br></br>
+                            
+                            Hoje, a empresa atua como um hub de soluções digitais, integrando os mais diferentes tipos de serviço.
+                            Na Vivo, o cliente conta com vantagens ao contratar ou transferir seus serviços para a empresa.
                         </TitleGoogle>
 
                         <Tab data={tabData}></Tab>

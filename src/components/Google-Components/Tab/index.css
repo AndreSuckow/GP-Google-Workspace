@@ -16,7 +16,7 @@
 
 .tab-buttons button{
   display: block;
-  width: 100%;
+  width: 108%;
   background-color: #fff;
   outline: none;
   cursor: pointer;
@@ -26,6 +26,8 @@
   padding: 1rem 3rem;
   font-weight: 800;
   box-shadow: 5px 5px 7px #b140f1;
+  font-family: 'officina-bold';
+  font-size: 1.5rem;
 }
 
 
@@ -40,4 +42,9 @@
   background-color: #fff;
   color: #b140f1;
   padding: 3rem;
+}
+
+.tab-text p {
+  font-size: 1.5rem !important;
+  font-family: 'officina' !important;
 }

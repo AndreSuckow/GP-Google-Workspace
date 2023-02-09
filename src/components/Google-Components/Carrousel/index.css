@@ -161,7 +161,7 @@
 }
 
 .carrousel .slick-track {
-    display: flex;
+    /* display: flex; */
     gap: 1.3rem;
 }
 
