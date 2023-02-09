@@ -619,7 +619,7 @@ const GooglePage = () => {
 
             {/* Inicio */}
             <img src={retrancaImg} alt="" className='retranca' />
-            <Section bg={bg1}>
+            <Section bg={bg1} id='start'>
                 <Container>
                     <LogoGoogle />
                 </Container>
@@ -627,7 +627,7 @@ const GooglePage = () => {
 
             {/* Workspace */}
             <div className='divMae'>
-                <Section>
+                <Section id="targetMenu">
 
                     <Container>
 
@@ -641,7 +641,7 @@ const GooglePage = () => {
                             nuvem, o Google Workspace inclui títulos como
                             <br></br>
                             <span>Gmail, Calendar, Drive, Docs, Sheets, Slides,
-                                <br></br>
+                            <br></br>
                                 Meets</span>, entre outros.
                             A partir de suas ferramentas, fomenta
                             <br></br>
@@ -652,8 +652,8 @@ const GooglePage = () => {
                         <img src={fundamentosImg} alt="" className="click-expand-conceitos" />
 
                         <ShowDownSliderGoogle data={showDownSliderGoogleData} />
-
                         <TitleGoogle
+                        
                             title="Flexibilidade"
                             titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '4rem' }}
                             paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
@@ -667,9 +667,11 @@ const GooglePage = () => {
                             que ajudam a sustentar a relevância
                             <br></br>
                             do Workspace no mercado.
+                        
                         </TitleGoogle>
 
                         <CircularCarrouselGoogle></CircularCarrouselGoogle>
+                        
                         <TitleGoogle
                             title="Colaboração"
                             titleConfig={{ textAlign: 'center', color: '#FFB84C' }}
@@ -694,7 +696,7 @@ const GooglePage = () => {
                     <Container>
                         <>
                             <div className='div-flex2'>
-                                <div>
+                                <div id="targetMenu2">
                                     <TitleGoogle
                                         title="Produtividade"
                                         titleConfig={{ textAlign: 'left', color: '#660099' }}
@@ -754,7 +756,7 @@ const GooglePage = () => {
                     </Container>
                 </Section>
 
-                <Section bg={bg2branca2} bgOrientation='center center' bgSize='100% 100%'>
+                <Section bg={bg2branca2} bgOrientation='center center' bgSize='100% 100%' id="targetMenu3">
                     <Container>
                         <TitleGoogle
                             title="Segurança"
@@ -811,7 +813,7 @@ const GooglePage = () => {
                     </Container>
                 </Section>
 
-                <Section>
+                <Section id="targetMenu4">
                     <Container>
                         <TitleGoogle
                             title="Público - Alvo"
@@ -882,7 +884,7 @@ const GooglePage = () => {
 
                     </Container>
                 </Section>
-                <Section bg={bg2branca2} bgOrientation='center center' bgSize='100% 100%'>
+                <Section bg={bg2branca2} bgOrientation='center center' bgSize='100% 100%' id="targetMenu5">
                     <Container>
                         <TitleGoogle
                             title="Business"
@@ -939,7 +941,7 @@ const GooglePage = () => {
                             <img src={clickImagemInfo} alt="" className="click-expand-conceitos" />
                             <ShowDownSliderGoogle data={showDownSliderGoogleData4} />
                         </div>
-                        <div className='div-flex-eficiencia'>
+                        <div className='div-flex-eficiencia' id="targetMenu6">
                             <TitleGoogle
                                 title="Eficiência"
                                 titleConfig={{ textAlign: 'left', color: '#FFB84C', marginTop: '6rem' }}
@@ -975,7 +977,7 @@ const GooglePage = () => {
                         <Tab data={tabData}></Tab>
                     </Container>
                 </Section>
-                <Section bg={bg2branca2} bgOrientation='center center' bgSize='100% 100%'>
+                <Section bg={bg2branca2} bgOrientation='center center' bgSize='100% 100%' id="targetMenu7">
                     <Container>
                         <div className='flex-atendimento'>
                             <TitleGoogle
