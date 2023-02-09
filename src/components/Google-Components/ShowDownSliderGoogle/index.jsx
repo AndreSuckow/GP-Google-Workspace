@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import './styles.css'
+import './modal.css'
+
 
 import Modal from "react-modal";
 
 import image1 from '../../../assets/images/google/workspace/showDownSlider/1-flexibilidade.png'
-
+import { width } from '@mui/system';
+Modal.setAppElement('#root')
 
 const ShowDownSliderGoogle = ({ data }) => {
     const [modal, setModal] = useState(false)
@@ -52,13 +55,13 @@ const ShowDownSliderGoogle = ({ data }) => {
                                     onRequestClose={closeModal}
                                     overlayClassName="modal-overlay"
                                     className={`modal-content ${item.modal.isBigModal ? 'modal-lg' : ''}`}>
-                                    <div className='modal-showDown'>
-                                        <img src={item.modal.image} alt="" />
+                                    <div className='modal-showDown' style={{...item.modal.config}}>
+                                        <img src={item.modal.image} alt="" style={{width: item.modal.imgSize}}/>
                                         <div>
-                                            <h2>{item.modal.title}</h2>
+                                            <h2 style={{textAlign: item.modal.titleAlign}}>{item.modal.title}</h2>
                                             {item.modal.p.map((modalItem, modalIndex) => {
                                                 return (
-                                                    <p key={modalIndex}>{modalItem}</p>
+                                                    <p key={modalIndex}  dangerouslySetInnerHTML={{ __html: modalItem}} style={{marginBottom: item.modal.paragraphMargin}}></p>
                                                 )
                                             })}
                                         </div>
