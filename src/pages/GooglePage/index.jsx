@@ -469,7 +469,7 @@ const GooglePage = () => {
                 image: minimalista1,
                 title: 'Minimalista e robusto',
                 titleAlign: 'left',
-                config:{justifyContent: 'space-between', width: '60rem', padding: '2rem'},
+                config:{justifyContent: 'space-between', width: '50rem', padding: '2rem'},
                 imgSize: '12rem',
                 paragraphMargin: '2rem',
                 p: [
