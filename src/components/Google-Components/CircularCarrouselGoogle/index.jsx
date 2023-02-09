@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import styles from './index.module.css'
+import './index.css'
 
 import gsap from 'gsap'
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
@@ -52,9 +52,8 @@ const CircularCarrousel = () => {
     const svgRef = useRef()
     useEffect(() => {
         gsap.registerPlugin(MotionPathPlugin)
-        console.log(styles)
 
-        items = gsap.utils.toArray(`.${styles['circular-carrousel']} .${styles.item}`)
+        items = gsap.utils.toArray(`.circular-carrousel .item`)
         numItems = items.length
         itemStep = 1 / numItems
         wrapProgress = gsap.utils.wrap(0, 1)
@@ -68,9 +67,9 @@ const CircularCarrousel = () => {
         if(!rendered) {
             rendered = true
 
-            const circlePath = MotionPathPlugin.convertToPath(`.${styles['circular-carrousel']} #holder`, false)[0]
+            const circlePath = MotionPathPlugin.convertToPath(`.circular-carrousel #holder`, false)[0]
             circlePath.id = 'circlePath'
-            document.querySelector(`.${styles['circular-carrousel']} svg.${styles['circle-svg']}`).prepend(circlePath)
+            document.querySelector(`.circular-carrousel svg.circle-svg`).prepend(circlePath)
             gsap.set(items, {
                 motionPath: {
                     path: circlePath,
@@ -83,7 +82,7 @@ const CircularCarrousel = () => {
 
             tl = gsap.timeline({ paused: true, reversed: true });
 
-            tl.to(`.${styles['circular-carrousel']} .wrapper`, {
+            tl.to(`.circular-carrousel .wrapper`, {
                 rotation: 360,
                 transformOrigin: "center",
                 duration: 1,
@@ -168,41 +167,41 @@ const CircularCarrousel = () => {
     }
 
     return (
-        <div className={styles['circular-wrapper']}>
-            <div className={styles['circular-carrousel']}>
-                <div className={styles.content}>
-                    <div className={styles.wrapper + ' wrapper'}>
+        <div className='circular-wrapper'>
+            <div className='circular-carrousel'>
+                <div className='content'>
+                    <div className='wrapper'>
                         { data.map((item, index) => {
                             return (
                                 <div 
-                                    className={`${styles.item} ${index + 1} ${ (itemActive === index) && `${styles.active}` }`} 
+                                    className={`item ${index + 1} ${ (itemActive === index) && `.active` }`} 
                                     key={index}
                                     onClick={_ => handleClick(index)}>
                                     { item.image }
                                 </div>
                             )
                         }) }
-                        <svg viewBox="0 0 300 300" ref={svgRef} className={styles['circle-svg']}>
-                            <circle id="holder" ref={circleRef} className={styles.st0} cx="151" cy="151" r="150" />
+                        <svg viewBox="0 0 300 300" ref={svgRef} className='circle-svg'>
+                            <circle id="holder" ref={circleRef} className='st0' cx="151" cy="151" r="150" />
                         </svg>
                     </div>
                 </div>
-                <div className={styles['text-area']}>
-                    <div className={styles['text-item']}>
+                <div className='text-area'>
+                    <div className='text-item'>
                         <h3>{ data[itemActive].title }: </h3>
                         <p>
                             { data[itemActive].text }
                         </p>
                     </div>
-                    <div className={styles.controls}>
-                        <button className={styles.prev} onClick={handlePrevButton}>
-                            <span className={styles.web}>&uArr;</span>
-                            <span className={styles.mobile}>&lArr;</span>
+                    <div className='controls'>
+                        <button className='prev' onClick={handlePrevButton}>
+                            <span className='web'>&uArr;</span>
+                            <span className='mobile'>&lArr;</span>
                         </button>
                         <p><span>0{itemActive + 1}</span>/0{totalItems}</p>
-                        <button className={styles.next} onClick={handleNextButton}>
-                            <span className={styles.web}>&dArr;</span>
-                            <span className={styles.mobile}>&rArr;</span>
+                        <button className='next' onClick={handleNextButton}>
+                            <span className='web'>&dArr;</span>
+                            <span className='mobile'>&rArr;</span>
                         </button>
                     </div>
                 </div>

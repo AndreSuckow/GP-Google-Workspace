@@ -1,13 +1,13 @@
 import React from 'react';
-import styles from './index.module.css';
+import './index.css';
 
 function TitleGoogle({ children, title, titleConfig = '', paragraphConfig = '', spanClass = '' }) {
     return (
         <div>
-            <h1 className={styles.title} style={titleConfig}>
+            <h1 className={'title'} style={titleConfig}>
                 {title}
             </h1>
-            <p className={styles.paragraph + ' ' + styles[spanClass]} style={paragraphConfig}>
+            <p className={'paragraph' + ' ' + spanClass} style={paragraphConfig}>
                 {children}
             </p>
         </div>

@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 
 // Rotas
 import Home from './pages/Home'
-import Teste from './pages/Teste'
+import GooglePage from './pages/GooglePage'
 
 // Import SCORM Hook
 import useScorm from './hooks/useScorm'
@@ -30,8 +30,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path='*' element={<Home />} />
-        <Route path='/start' element={<Teste />} />
+        {/* <Route path='*' element={<Home />} /> */}
+        <Route path='/start' element={<GooglePage />} />
       </Routes>
     </div>
   )

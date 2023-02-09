@@ -63,7 +63,7 @@
 }
 
 .div-flex4 .slick-dots li button:before, .div-flex5 .slick-dots li button:before{
-    color: #cecece !important;
+    color: #660099 !important;
 }
 .div-flex4  .slick-dots .slick-active button:before, .div-flex5  .slick-dots .slick-active button:before {
     color: #fe9901 !important;

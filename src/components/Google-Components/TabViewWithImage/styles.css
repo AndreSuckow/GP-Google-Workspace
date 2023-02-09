@@ -1,6 +1,7 @@
 .tab-view-with-image {
     width: 100%;
     display: flex;
+    align-items: start;
     justify-content: center;
     column-gap: 3rem;
     margin-top: 6rem;
