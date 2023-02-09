@@ -55,7 +55,7 @@
 }
 
 .show-down-slider .show-down-wrapper .slider[value="1"] .content-wrapper .content p {
-    background-color: #ffb84c;
+    background-color: #ffb84c !important;
 }
 
 .show-down-slider .show-down-wrapper .slider[value="2"] .content-wrapper .content p {

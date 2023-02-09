@@ -14,14 +14,14 @@
   width: 25%;
 }
 
-.tab-buttons button{
+.tab-buttons button {
   display: block;
   width: 108%;
   background-color: #fff;
   outline: none;
   cursor: pointer;
   border: none;
-  color: #b140f1;
+  color: #660099;
   transition: background-color 0.3s;
   padding: 1rem 3rem;
   font-weight: 800;
@@ -33,7 +33,7 @@
 
 
 .tab-buttons button:hover, .tab-buttons button.active{
-  background-color: #ffb84c;
+  background-color: #ffb84c !important;
 }
 
 .tab-text{
@@ -47,4 +47,5 @@
 .tab-text p {
   font-size: 1.5rem !important;
   font-family: 'officina' !important;
+  color: #660099;
 }

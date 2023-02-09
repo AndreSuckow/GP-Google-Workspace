@@ -360,7 +360,7 @@
 } */
 
 .div-flex-eficiencia .estilo1 .item-content img {
-    width: 85%;
+    width: 94%;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -385,6 +385,9 @@
     width: 100%;
     margin: 0 auto;
     margin: 2rem 0;
+    -webkit-box-shadow: 5px 5px 7px #b140f1;
+    -moz-box-shadow: 5px 5px 7px #b140f1;
+    box-shadow: 5px 5px 7px #b140f1;
 }
 
 .flex-atendimento {
@@ -397,4 +400,24 @@
 
 .flex-atendimento img {
     width: 40%;
+    -webkit-box-shadow: 5px 5px 7px #b140f1;
+    -moz-box-shadow: 5px 5px 7px #b140f1;
+    box-shadow: 5px 5px 7px #b140f1;
+}
+
+.ajustandoIMG2 .estilo1 .item-content img {
+    width: 40%;
+}
+
+.ajustandoIMG2 .estilo1 .item-content {
+    padding-top: 1.5rem;
+}
+
+.assinatura{
+    width: 100%;
+}
+
+.maskara{
+    background: url(../../assets/images/google/workspace/assinatura/maskara.png);
+    
 }

@@ -34,6 +34,10 @@
     padding-top: 3rem;
 }
 
+.estilo1 .item-content span{
+    color: #660099 !important;
+}
+
 .estilo1 .item-content img {
     width: 7.5rem;
     padding: 1rem;

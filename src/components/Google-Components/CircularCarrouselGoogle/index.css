@@ -115,7 +115,7 @@
 
 .circular-carrousel .text-area .controls p {
     font-size: 1.5rem;
-    color: #FFB84C;
+    color: #FFB84C !important;
     font-weight: bolder;
 }
 
@@ -125,6 +125,10 @@
 
 .circular-carrousel .text-area .controls button span.mobile {
     display: none;
+}
+
+.circular-carrousel .text-area .controls button span{
+    display: block;
 }
 
 .circular-carrousel .text-area .text-item {
