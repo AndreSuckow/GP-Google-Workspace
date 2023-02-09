@@ -6,7 +6,6 @@
     column-gap: 3rem;
     margin-top: 6rem;
     margin-bottom: 1rem;
-    margin-bottom: 10rem;
     z-index: 1;
 }
 
@@ -80,10 +79,12 @@
     column-gap: 2rem;
     flex-direction: column;
     transition: all ease-out .5s;
+    gap: 2rem;
 }
 
 .tab-view-with-image .content .title {
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 .tab-view-with-image .content .title h4 {

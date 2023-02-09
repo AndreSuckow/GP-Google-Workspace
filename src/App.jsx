@@ -30,8 +30,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        {/* <Route path='*' element={<Home />} /> */}
-        <Route path='/start' element={<GooglePage />} />
+        <Route path='/*' element={<GooglePage />} />
       </Routes>
     </div>
   )

@@ -37,9 +37,6 @@
 
 .div-flex img{
     width: 30%;
-    -webkit-box-shadow: 5px 5px 7px #b140f1;
-    -moz-box-shadow: 5px 5px 7px #b140f1;
-    box-shadow: 5px 5px 7px #b140f1;
 }
 
 
@@ -228,7 +225,7 @@
 }
 
 .pSolto {
-    margin-top: 10rem;
+    margin-top: 5rem;
     font-size: 1.5rem !important;
 }
 
@@ -237,6 +234,7 @@
 }
 
 .displayFlex{
+    margin-bottom: 4rem;
     column-gap: 5rem;
     display: flex;
     align-items: center;
@@ -264,6 +262,9 @@
 
 .displayFlex2 img{
  width: 30%;
+ -webkit-box-shadow: 5px 5px 7px #b140f1;
+ -moz-box-shadow: 5px 5px 7px #b140f1;
+ box-shadow: 5px 5px 7px #b140f1;
 }
 
 .displayFlex2 .tabela {
@@ -283,4 +284,17 @@
     justify-content: center;
     flex-direction: column-reverse;
     width: 100%;
+    margin-bottom: 2rem;
+}
+
+.div-flex5 .carrousel{
+    width: 75%;
+}
+
+.div-flex5 .estilo1 .item-content img{
+    width: 14.5rem;
+}
+
+.fixTitle{
+    margin-top: 4rem;
 }

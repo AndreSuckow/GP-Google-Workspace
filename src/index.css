@@ -1,6 +1,6 @@
 @font-face {
   font-family: officina;
-  src: url('./assets/fonts/OfficinaSerif-Bold.woff2') format('woff2'),
+  src: url('./assets/fonts/OfficinaSerif-Book.woff2') format('woff2'),
       url('./assets/fonts/OfficinaSerif-Book.woff') format('woff');
   font-weight: 400;
   font-style: normal;
@@ -38,4 +38,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p {
+  font-family: 'officina' !important;
+}
+
+span, h1, h2, h3, h4, h5, h6, h7{
+  font-family: 'officina-bold' !important;
 }
