@@ -1,0 +1,214 @@
+import { useState, useEffect, useRef } from 'react'
+import styles from './index.module.css'
+
+import gsap from 'gsap'
+import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
+
+// import { ReactComponent as Icon1 } from '../../../assets/images/carrousel/circularCarrousel/img-1.svg';
+// import { ReactComponent as Icon2 } from '../../../assets/images/carrousel/circularCarrousel/img-2.svg';
+// import { ReactComponent as Icon3 } from '../../../assets/images/carrousel/circularCarrousel/img-3.svg';
+// import { ReactComponent as Icon4 } from '../../../assets/images/carrousel/circularCarrousel/img-4.svg';
+
+
+
+import { ReactComponent as Icon1 } from '../../../assets/images/google/workspace/CircularCarrousel/img-1-Cloud.svg';
+import { ReactComponent as Icon2 } from '../../../assets/images/google/workspace/CircularCarrousel/img-2-porquinho.svg';
+import { ReactComponent as Icon3 } from '../../../assets/images/google/workspace/CircularCarrousel/img-3-world.svg';
+import { ReactComponent as Icon4 } from '../../../assets/images/google/workspace/CircularCarrousel/img-4-infinity.svg';
+
+const data = [
+    {
+        title: "Nativo da Nuvem",
+        text: "Acessível de forma on-line ou off-line, a partir de qualquer dispositivo através do navegador ou app.",
+        image: <Icon1 />
+    },
+    {
+        title: "Item 2",
+        text: "Com este recurso, o cliente pode procurar por título de um filme, programas de TV, elenco ou canal.",
+        image: <Icon2 />
+    },
+    {
+        title: "Item 3",
+        text: "Na página inicial, acessando através do direcional para baixo do controle remoto. Existem tiras por tema, indicações de conteúdos, programas de TV etc.",
+        image: <Icon3 />
+    },
+    {
+        title: "Item 4",
+        text: "Na página inicial, acessando o Vivo Play, temos os aplicativos Nextflix, Amazon Prime Video, Youtube e Youtube Kids. Para Netflix, a contratação de planos é realizada diretamente com a Vivo.",
+        image: <Icon4 />
+    },
+]
+
+
+let rendered = false
+let items, numItems, itemStep, wrapProgress, snap, wrapTracker, tracker = { item: 0 }, tl
+
+const CircularCarrousel = () => {
+    // eslint-disable-next-line
+    const [itemActive, setItemActive] = useState(0)
+    const [totalItems, setTotalItems] = useState()
+
+    const circleRef = useRef()
+    const svgRef = useRef()
+    useEffect(() => {
+        gsap.registerPlugin(MotionPathPlugin)
+        console.log(styles)
+
+        items = gsap.utils.toArray(`.${styles['circular-carrousel']} .${styles.item}`)
+        numItems = items.length
+        itemStep = 1 / numItems
+        wrapProgress = gsap.utils.wrap(0, 1)
+        snap = gsap.utils.snap(itemStep)
+        wrapTracker = gsap.utils.wrap(0, numItems)
+
+        setTotalItems(numItems)
+    }, [])
+
+    useEffect(() => {
+        if(!rendered) {
+            rendered = true
+
+            const circlePath = MotionPathPlugin.convertToPath(`.${styles['circular-carrousel']} #holder`, false)[0]
+            circlePath.id = 'circlePath'
+            document.querySelector(`.${styles['circular-carrousel']} svg.${styles['circle-svg']}`).prepend(circlePath)
+            gsap.set(items, {
+                motionPath: {
+                    path: circlePath,
+                    align: circlePath,
+                    alignOrigin: [0.5, 0.5],
+                    end: (i) => i / items.length,
+                },
+                scale: .6,
+            });
+
+            tl = gsap.timeline({ paused: true, reversed: true });
+
+            tl.to(`.${styles['circular-carrousel']} .wrapper`, {
+                rotation: 360,
+                transformOrigin: "center",
+                duration: 1,
+                ease: "none",
+            });
+
+            tl.to(
+                items,
+                {
+                    rotation: "-=360",
+                    transformOrigin: "center",
+                    duration: 1,
+                    ease: "none",
+                },
+                0
+            );
+
+            tl.to(
+                tracker,
+                {
+                    item: numItems,
+                    duration: 1,
+                    ease: "none",
+                    modifiers: {
+                        item(value) {
+                            return wrapTracker(numItems - Math.round(value));
+                        },
+                    },
+                },
+                0
+            );
+        }
+    }, [itemActive])
+
+    const handleClick = i => {
+        let current = tracker.item,
+        activeItem = i
+
+        if (i === current) {
+            return;
+        }
+
+        setItemActive(activeItem)
+        
+        var diff = current - i;
+
+        if (Math.abs(diff) < numItems / 2) {
+            moveWheel(diff * itemStep);
+        } else {
+            var amt = numItems - Math.abs(diff);
+
+            if (current > i) {
+                moveWheel(amt * -itemStep);
+            } else {
+                moveWheel(amt * itemStep);
+            }
+        }
+    }
+
+    const moveWheel = amount => {
+        let progress = tl.progress();
+        tl.progress(wrapProgress(snap(tl.progress() + amount)));
+        let next = tracker.item;
+        tl.progress(progress);
+    
+        setItemActive(next)
+    
+        gsap.to(tl, {
+            progress: snap(tl.progress() + amount),
+            modifiers: {
+                progress: wrapProgress,
+            },
+        });
+    }
+
+    const handlePrevButton = () => {
+        moveWheel(itemStep)
+    }
+
+    const handleNextButton = () => {
+        moveWheel(-itemStep)
+    }
+
+    return (
+        <div className={styles['circular-wrapper']}>
+            <div className={styles['circular-carrousel']}>
+                <div className={styles.content}>
+                    <div className={styles.wrapper + ' wrapper'}>
+                        { data.map((item, index) => {
+                            return (
+                                <div 
+                                    className={`${styles.item} ${index + 1} ${ (itemActive === index) && `${styles.active}` }`} 
+                                    key={index}
+                                    onClick={_ => handleClick(index)}>
+                                    { item.image }
+                                </div>
+                            )
+                        }) }
+                        <svg viewBox="0 0 300 300" ref={svgRef} className={styles['circle-svg']}>
+                            <circle id="holder" ref={circleRef} className={styles.st0} cx="151" cy="151" r="150" />
+                        </svg>
+                    </div>
+                </div>
+                <div className={styles['text-area']}>
+                    <div className={styles['text-item']}>
+                        <h3>{ data[itemActive].title }: </h3>
+                        <p>
+                            { data[itemActive].text }
+                        </p>
+                    </div>
+                    <div className={styles.controls}>
+                        <button className={styles.prev} onClick={handlePrevButton}>
+                            <span className={styles.web}>&uArr;</span>
+                            <span className={styles.mobile}>&lArr;</span>
+                        </button>
+                        <p><span>0{itemActive + 1}</span>/0{totalItems}</p>
+                        <button className={styles.next} onClick={handleNextButton}>
+                            <span className={styles.web}>&dArr;</span>
+                            <span className={styles.mobile}>&rArr;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default CircularCarrousel
