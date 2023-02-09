@@ -125,6 +125,7 @@ import clickSetas from '../../assets/images/google/workspace/business/clickSetas
 
 
 import '../../components/Google-Components/Carrousel/carrouselFix.css';
+import Tab from '../../components/Google-Components/Tab';
 
 const GooglePage = () => {
     const carrouselData = [
@@ -429,7 +430,58 @@ const GooglePage = () => {
         },
     ]
 
+    const showDownSliderGoogleData4 = [
+        {
+            image: minimalista1,
+            display: true,
+            texts: [
+                'Projeto Padrão'
+            ],
+            modal: {
+                image: minimalista1,
+                title: 'Minimalista e robusto',
+                titleAlign: 'left',
+                config:{justifyContent: 'space-between', width: '60rem', padding: '2rem'},
+                imgSize: '12rem',
+                paragraphMargin: '2rem',
+                p: [
+                    `Interface amigável que destaca as ferramentas úteis e mais recorrentes.`,
+                    `Interface amigável que destaca as ferramentas úteis e mais recorrentes.`,
+                    `Interface <span>amigável</span> que destaca as <span>ferramentas</span> úteis e mais recorrentes.`,
+                ]
+            },
+        },
+        {
+            image: minimalista1,
+            display: false,
+            texts: [
+                'Projeto especial'
+            ],
+            modal: {
+                image: imgModal1,
+                title: 'Minimalista e robusto',
+                p: [
+                    `Interface amigável que destaca as ferramentas úteis e mais recorrentes.`,
+                ]
+            },
+        },
+    ]
 
+    const tabData =  [ 
+        {
+          buttonText:'Produtividade',
+          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat ut dolores veniam nemo quia repudiandae architecto iusto, aliquid sed voluptas quas magnam quod porro, sunt nostrum labore a amet.',
+        },
+        {
+          buttonText:'Ofertas especias',
+          text: 'Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat ut dolores veniam nemo quia repudiandae architecto iusto, aliquid sed voluptas quas magnam quod porro, sunt nostrum labore a amet.',
+        },
+        {
+          buttonText:'Suporte',
+          text: 'Lorem3 ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat ut dolores veniam nemo quia repudiandae architecto iusto, aliquid sed voluptas quas magnam quod porro, sunt nostrum labore a amet.',
+        },
+        
+      ]
     return (
         <>
 
@@ -720,6 +772,34 @@ const GooglePage = () => {
                             <CarrouselGoogle data={carrouselData6} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' />
                             <img src={clickSetas} alt="" className='clickSetas' />
                         </div>
+                    </Container>
+                </Section>
+
+                <Section>
+                    <Container>
+                        <TitleGoogle
+                            title="Cenários de comercialização"
+                            titleConfig={{ textAlign: 'center', color: '#FFB84C' }}
+                            paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
+                            spanClass='span-orange'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni hic ipsum nesciunt sequi deleniti soluta ea accusantium iste nihil, quod mollitia reprehenderit dignissimos quam fuga perferendis voluptatem. Reprehenderit, eius?
+                        </TitleGoogle>
+                        <ShowDownSliderGoogle data={showDownSliderGoogleData4} />
+                    </Container>
+                </Section>
+
+
+                <Section>
+                    <Container>
+                        <TitleGoogle
+                            title="Vivo é a solução"
+                            titleConfig={{ textAlign: 'center', color: '#f784da' }}
+                            paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
+                            spanClass='span-orange'>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni hic ipsum nesciunt sequi deleniti soluta ea accusantium iste nihil, quod mollitia reprehenderit dignissimos quam fuga perferendis voluptatem. Reprehenderit, eius?
+                        </TitleGoogle>
+
+                    <Tab data={tabData}></Tab>
                     </Container>
                 </Section>
             </div>
