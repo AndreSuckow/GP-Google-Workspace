@@ -126,7 +126,7 @@ import clickSetas from '../../assets/images/google/workspace/business/clickSetas
 
 import '../../components/Google-Components/Carrousel/carrouselFix.css';
 
-const Teste = () => {
+const GooglePage = () => {
     const carrouselData = [
         {
             title: 'Ambiente Colaborativo',
@@ -241,8 +241,14 @@ const Teste = () => {
         },
         {
             title: '1.000',
-            text: `instâncias de malware suspeitos são comunicadas aos usuários.`,
-
+            text: `instâncias de   
+            <button id="tooltip-2"
+                onMouseEnter={() => {
+                    !isOpen && setIsOpen(true)
+                    setAnchorId('tooltip-2');
+                }}>
+                <span>malware</span>
+            </button> suspeitos são comunicadas aos usuários.`,
         }
     ]
 
@@ -721,4 +727,4 @@ const Teste = () => {
     )
 }
 
-export default Teste
+export default GooglePage
