@@ -298,3 +298,22 @@
 .fixTitle{
     margin-top: 4rem;
 }
+
+.ajustandoIMG .estilo1 .item-content img{
+    width: 19.5rem;
+}
+
+.ajustandoIMG .carrousel{
+    width: 76%;
+}
+
+.ajustandoIMG .estilo1 .item-content p{
+
+}
+
+.div-flex-comercializacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

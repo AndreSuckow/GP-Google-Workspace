@@ -115,9 +115,24 @@ import womanCat from '../../assets/images/google/workspace/business/womanCat.png
 import blackblack from '../../assets/images/google/workspace/Enterprise/blakblack.png'
 import white from '../../assets/images/google/workspace/Enterprise/white.png'
 
+
 // Na prática 3 --> carrousel horizontal 8
+import UMicaro from '../../assets/images/google/workspace/Enterprise/icaro.png'
+import DOIScantora from '../../assets/images/google/workspace/Enterprise/cantora.png'
+import TRESshow from '../../assets/images/google/workspace/Enterprise/show.png'
+import QUATROicaropensativo from '../../assets/images/google/workspace/Enterprise/icaropensativo.png'
+import CINCOicaronote from '../../assets/images/google/workspace/Enterprise/icaronote.png'
+import SEISicaroextressado from '../../assets/images/google/workspace/Enterprise/icaroextressado.png'
+import SETEmuieicaro from '../../assets/images/google/workspace/Enterprise/muieicaro.png'
+import OITOicarotendoideias from '../../assets/images/google/workspace/Enterprise/icarotendoideias.png'
+
 
 // Cenários de comercialização --> ShowDownSlider Modal
+import clickImagemInfo from '../../assets/images/google/workspace/comercializacao/clickImagensExpandirInfo.png'
+import projetopadrao from '../../assets/images/google/workspace/comercializacao/projetopadrao.png'
+import projetoespecial from '../../assets/images/google/workspace/comercializacao/projetoespecial.png'
+import imgpadrao from '../../assets/images/google/workspace/comercializacao/imgprojetopadrao.png'
+import imgespecial from '../../assets/images/google/workspace/comercializacao/imgprojetoespecial.png'
 
 // Eficiência --> carrousel de pé
 
@@ -319,6 +334,45 @@ const GooglePage = () => {
         },
     ]
 
+
+    const carrouselData8 = [
+        {
+            text: `<span>Ícaro é chefe da equipe de marketing de uma gravadora.</span>`,
+            imgCarrousel: UMicaro
+        },
+        {
+            text: `<span>Na reunião de planejamento semestral de lançamentos, a presidência destacou a importância da divulgação do DVD ao vivo de uma cantora recém-contratada.</span>`,
+
+            imgCarrousel: DOIScantora
+        },
+        {
+            text: `<span>Com isso, ele precisa buscar inspiração nas músicas e nos elementos cenográficos do show, criando assim, uma campanha satisfatória tanto para a gravadora, quanto para a artista.</span>`,
+            imgCarrousel: TRESshow
+        },
+        {
+            text: `<span>Ícaro decidiu reunir sua equipe para que todos pudessem contribuir com insights sobre a demanda.</span>`,
+            imgCarrousel: QUATROicaropensativo
+        },
+        {
+            text: `<span>A comunicação, porém, está confusa. Os colaboradores compartilham a tela inúmeras vezes e precisam ser ágeis para anotar as ideias uns dos outros.</span>`,
+
+            imgCarrousel: CINCOicaronote
+        },
+        {
+            text: `<span>Para piorar a situação, a equipe não consegue gravar a reunião para revisitar com calma os pontos abordados posteriormente.</span>`,
+            imgCarrousel: SEISicaroextressado
+        },
+        {
+            text: `<span>Percebe como o uso do Jamboard e Meet simplificaria a demanda da equipe?</span>`,
+
+            imgCarrousel: SETEmuieicaro
+        },
+        {
+            text: `<span>Dessa forma, eles conseguiriam compartilhar insights de forma prática e produtiva, além de gravar toda a reunião sem qualquer limite de tempo.</span>`,
+            imgCarrousel: OITOicarotendoideias
+        },
+    ]
+
     const showDownSliderGoogleData = [
         {
             image: image1,
@@ -460,56 +514,78 @@ const GooglePage = () => {
 
     const showDownSliderGoogleData4 = [
         {
-            image: minimalista1,
+            image: projetopadrao,
             display: true,
             texts: [
                 'Projeto Padrão'
             ],
             modal: {
-                image: minimalista1,
-                title: 'Minimalista e robusto',
+                image: imgpadrao,
+                title: 'Licença Única',
                 titleAlign: 'left',
-                config:{justifyContent: 'space-between', width: '50rem', padding: '2rem'},
+                config: { justifyContent: 'space-between', width: '50rem', padding: '2rem' },
                 imgSize: '12rem',
                 paragraphMargin: '2rem',
                 p: [
-                    `Interface amigável que destaca as ferramentas úteis e mais recorrentes.`,
-                    `Interface amigável que destaca as ferramentas úteis e mais recorrentes.`,
-                    `Interface <span>amigável</span> que destaca as <span>ferramentas</span> úteis e mais recorrentes.`,
+                    `<ul>
+                        <li>
+                            <span>Nova contratação</span> de uma oferta da <span>mesma família</span> de produtos, respeitando a regra de até <span>300 licenças</span> para o plano Business e acima de 300 licenças para <span>Enterprise</span>;
+                        </li><br>
+                        <li>
+                            <span>Upgrade</span> de todas as licenças da oferta atual do cliente para qualquer outro plano;
+                        </li><br>
+                        <li>
+                            Projeto para <span>ampliar</span> licenças na oferta atual do cliente.
+                        </li>
+                    </ul>`,
                 ]
             },
         },
         {
-            image: minimalista1,
+            image: projetoespecial,
             display: false,
             texts: [
                 'Projeto especial'
             ],
             modal: {
-                image: imgModal1,
-                title: 'Minimalista e robusto',
+                image: imgespecial,
+                title: 'Mix de licenças / PME e dispositivos',
+                titleAlign: 'left',
+                config: { justifyContent: 'space-between', width: '50rem', padding: '2rem' },
+                imgSize: '12rem',
+                paragraphMargin: '2rem',
                 p: [
-                    `Interface amigável que destaca as ferramentas úteis e mais recorrentes.`,
+                    `<ul>
+                        <li>
+                            <span>Novas contratações</span> de um <span>mix</span> de ofertas de produtos, independentemente da família;
+                        </li><br>
+                        <li>
+                            <span>Ampliação</span> de licenças de outra oferta ou família para um cliente que já possui o Workspace;
+                        </li><br>
+                        <li>
+                        Projeto para <span>ampliar</span> licenças na oferta atual do cliente.
+                        </li>
+                    </ul>`,
                 ]
             },
         },
     ]
 
-    const tabData =  [ 
+    const tabData = [
         {
-          buttonText:'Produtividade',
-          text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat ut dolores veniam nemo quia repudiandae architecto iusto, aliquid sed voluptas quas magnam quod porro, sunt nostrum labore a amet.',
+            buttonText: 'Produtividade',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat ut dolores veniam nemo quia repudiandae architecto iusto, aliquid sed voluptas quas magnam quod porro, sunt nostrum labore a amet.',
         },
         {
-          buttonText:'Ofertas especias',
-          text: 'Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat ut dolores veniam nemo quia repudiandae architecto iusto, aliquid sed voluptas quas magnam quod porro, sunt nostrum labore a amet.',
+            buttonText: 'Ofertas especias',
+            text: 'Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat ut dolores veniam nemo quia repudiandae architecto iusto, aliquid sed voluptas quas magnam quod porro, sunt nostrum labore a amet.',
         },
         {
-          buttonText:'Suporte',
-          text: 'Lorem3 ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat ut dolores veniam nemo quia repudiandae architecto iusto, aliquid sed voluptas quas magnam quod porro, sunt nostrum labore a amet.',
+            buttonText: 'Suporte',
+            text: 'Lorem3 ipsum dolor sit amet consectetur adipisicing elit. Enim quaerat ut dolores veniam nemo quia repudiandae architecto iusto, aliquid sed voluptas quas magnam quod porro, sunt nostrum labore a amet.',
         },
-        
-      ]
+
+    ]
     return (
         <>
 
@@ -711,7 +787,7 @@ const GooglePage = () => {
                     <Container>
                         <TitleGoogle
                             title="Público - Alvo"
-                            titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '-4rem'}}
+                            titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '-4rem' }}
                             paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
                             spanClass='span-orange'>
                             Buscando auxiliar demandas de produtividade<br></br>
@@ -736,15 +812,11 @@ const GooglePage = () => {
                         <div className='video'>
                             <Video source={videoSource}></Video>
                         </div>
-                    </Container>
-                </Section>
 
-                <Section>
-                    <Container>
                         <div className='displayFlex'>
                             <TitleGoogle
                                 title="Impacto Econômico"
-                                titleConfig={{ textAlign: 'left', color: '#FFB84C', marginTop: ''}}
+                                titleConfig={{ textAlign: 'left', color: '#FFB84C', marginTop: '' }}
                                 paragraphConfig={{ textAlign: 'left', color: '#ffff' }}
                                 spanClass='span-orange'>
                                 Podemos considerar como trunfos<br></br>
@@ -779,6 +851,7 @@ const GooglePage = () => {
                             <img src={blackMan} alt="" />
                             <img src={tabela} alt="" className='tabela' />
                         </div>
+
                     </Container>
                 </Section>
                 <Section bg={bg2branca2} bgOrientation='center center' bgSize='100% 100%'>
@@ -812,27 +885,39 @@ const GooglePage = () => {
                 <Section>
                     <Container>
                         <TitleGoogle
-                            title="Tipos de Oferta"
+                            title="Na Prática"
                             titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '-4rem' }}
                             paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
-                            spanClass='span-orange'>
-                            Distribuído em planos mensais ou anuais, as ofertas<br></br>
-                            do Workspace são separadas pelas seguintes famílias:<br></br>
-                            <span>Business</span> e <span>Enterprise</span>.<br></br><br></br>
+                            spanClass='span-purple'>
+                            Antes de continuar, que tal entender um pouco<br></br>
+                            mais da integração do Workspace com a rotina<br></br>
+                            de uma empresa? Use os botões para ler
+                            a história de Ícaro:
                         </TitleGoogle>
+
+                        <div className='ajustandoIMG'>
+                            <CarrouselGoogle data={carrouselData8} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' />
+                        </div>
+                        <TitleGoogle
+                            title="Cenários de comercialização"
+                            titleConfig={{ textAlign: 'left', color: '#FFB84C', marginTop: '6rem' }}
+                            paragraphConfig={{ textAlign: 'left', color: '#ffff' }}
+                            spanClass='span-orange'>
+                            Englobando seu atendimento tanto para os clientes que não utilizam<br></br>
+                            o Workspace, quanto os que desejam dar um upgrade em sua contratação, dispomos<br></br>
+                            de dois formatos de comercialização para atender as necessidades das empresas. Conheça abaixo:
+                        </TitleGoogle>
+                        <div className="div-flex-comercializacao">
+                            <img src={clickImagemInfo} alt="" className="click-expand-conceitos" />
+                            <ShowDownSliderGoogle data={showDownSliderGoogleData4} />
+                        </div>
+
                     </Container>
                 </Section>
 
                 <Section>
                     <Container>
-                        <TitleGoogle
-                            title="Cenários de comercialização"
-                            titleConfig={{ textAlign: 'center', color: '#FFB84C' }}
-                            paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
-                            spanClass='span-orange'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni hic ipsum nesciunt sequi deleniti soluta ea accusantium iste nihil, quod mollitia reprehenderit dignissimos quam fuga perferendis voluptatem. Reprehenderit, eius?
-                        </TitleGoogle>
-                        <ShowDownSliderGoogle data={showDownSliderGoogleData4} />
+
                     </Container>
                 </Section>
 
@@ -847,7 +932,7 @@ const GooglePage = () => {
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere magni hic ipsum nesciunt sequi deleniti soluta ea accusantium iste nihil, quod mollitia reprehenderit dignissimos quam fuga perferendis voluptatem. Reprehenderit, eius?
                         </TitleGoogle>
 
-                    <Tab data={tabData}></Tab>
+                        <Tab data={tabData}></Tab>
                     </Container>
                 </Section>
             </div>
