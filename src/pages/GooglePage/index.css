@@ -197,9 +197,38 @@
 }
 
 .dlp-content{
+    width: 100%;
     display: flex;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 7rem;
     gap: 2rem;
+}
+
+.dlp-wrapper {
+    width: 57%;
+    position: relative;
+}
+
+.dlp-wrapper .carrousel {
+    margin: 0;
+    width: 100%;
+}
+
+.dlp-wrapper .carrousel .item-content {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.dlp-wrapper .carrousel .item-content p {
+    margin: 0;
+    text-align: center;
+}
+
+.dlp-wrapper .carrousel .item-content span {
+    font-size: 1.5rem;
+    color: #000;
 }
 
 .dlp-content .dlp-img{
@@ -307,10 +336,6 @@
     width: 76%;
 }
 
-.ajustandoIMG .estilo1 .item-content p{
-
-}
-
 .div-flex-comercializacao {
     display: flex;
     align-items: center;
@@ -330,10 +355,6 @@
 
 .ajustandoIMG3 .estilo1 .item-content img{
     width: 19.5rem;
-}
-
-.ajustandoIMG3 .estilo1 .item-content p{
-
 }
 
 .div-flex-eficiencia .carrousel.estilo1 {

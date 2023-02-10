@@ -132,7 +132,6 @@ import OITOicarotendoideias from '../../assets/images/google/workspace/Enterpris
 
 
 // Cenários de comercialização --> ShowDownSlider Modal
-import clickImagemInfo from '../../assets/images/google/workspace/comercializacao/clickImagensExpandirInfo.png'
 import projetopadrao from '../../assets/images/google/workspace/comercializacao/projetopadrao.png'
 import projetoespecial from '../../assets/images/google/workspace/comercializacao/projetoespecial.png'
 import imgpadrao from '../../assets/images/google/workspace/comercializacao/imgprojetopadrao.png'
@@ -159,7 +158,7 @@ import ultimo2 from '../../assets/images/google/workspace/ultima/2.png'
 import ultimo3 from '../../assets/images/google/workspace/ultima/3.png'
 import ultimo4 from '../../assets/images/google/workspace/ultima/4.png'
 
-import imgTeste from '../../assets/images/confirme.png'
+import imgTeste from '../../assets/images/confirme.png' // inserido por Flávio
 
 // Assinatura
 import assinatura from '../../assets/images/google/workspace/assinatura/academiav.png'
@@ -473,6 +472,22 @@ const GooglePage = () => {
             texts: [
                 'Simplicidade'
             ]
+        },
+    ]
+
+    const carrouselData12 = [
+        {
+            text: `<span>Vazamento de dados e/ou documentos&nbsp;sigilosos.</span>`,
+            imgCarrousel: segIcon1
+        },
+        {
+            text: `<span>Perdas de materiais.</span>`,
+
+            imgCarrousel: segIcon2
+        },
+        {
+            text: `<span>Hackeamento de contas.</span>`,
+            imgCarrousel: segIcon3
         },
     ]
 
@@ -836,7 +851,7 @@ const GooglePage = () => {
                                 <CarrouselGoogle data={carrouselData4} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo4' />
                             </div>
                             <div className='dlp-content'>
-                                <div>
+                                <div className='dlp-wrapper'>
                                     <TitleGoogle
                                         title="DLP"
                                         titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '4rem' }}
@@ -853,8 +868,14 @@ const GooglePage = () => {
 
                                         Essa prevenção reduz riscos, como:
                                     </TitleGoogle>
+                                    <CarrouselGoogle 
+                                        data={carrouselData12} 
+                                        arrowPrev={arrowLeft} 
+                                        arrowNext={arrowRight} 
+                                        slideShow={1} 
+                                        carrouselType='estilo1' />
                                     
-                                     <div className='dlp-riscos'>
+                                     {/* <div className='dlp-riscos'>
                                         <div className='risco'>
                                             <img src={segIcon1} alt="" />
                                             <p>Vazamento de dados e/ou<br></br> documentos sigilosos.</p>
@@ -867,7 +888,7 @@ const GooglePage = () => {
                                             <img src={segIcon3} alt="" />
                                             <p>Hackeamento de contas.</p>
                                         </div>
-                                    </div> 
+                                    </div>  */}
 
                                 </div>
                                 <img className='dlp-img' src={manLaptop} alt="" />

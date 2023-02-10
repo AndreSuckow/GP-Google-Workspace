@@ -62,9 +62,11 @@
     color: #fe9901 !important;
 }
 
-.div-flex4 .slick-dots li button:before, .div-flex5 .slick-dots li button:before{
+.div-flex4 .slick-dots li button:before, .div-flex5 .slick-dots li button:before,
+.dlp-content .slick-dots li button:before, .div-flex5 .slick-dots li button:before {
     color: #660099 !important;
 }
-.div-flex4  .slick-dots .slick-active button:before, .div-flex5  .slick-dots .slick-active button:before {
+.div-flex4  .slick-dots .slick-active button:before, .div-flex5  .slick-dots .slick-active button:before,
+.dlp-content  .slick-dots .slick-active button:before, .div-flex5  .slick-dots .slick-active button:before {
     color: #fe9901 !important;
 }
