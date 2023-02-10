@@ -12,7 +12,6 @@ import LogoGoogle from '../../components/Google-Components/Logo';
 import bg1 from '../../assets/images/bg_1.png'
 import bg2branca from '../../assets/images/bg_2.png'
 import bg2branca2 from '../../assets/images/bg_3.png'
-import maskara from '../../assets/images/google/workspace/assinatura/maskara.png'
 
 // O que é o Workspace? --> showDownSliderGoogle
 import fundamentosImg from '../../assets/images/click-imagens.png'
@@ -74,14 +73,12 @@ import C3img4 from '../../assets/images/google/workspace/carrousel-3/4.png'
 import C3img5 from '../../assets/images/google/workspace/carrousel-3/5.png'
 import C3img6 from '../../assets/images/google/workspace/carrousel-3/6.png'
 import C3img7 from '../../assets/images/google/workspace/carrousel-3/7.png'
-import { Tooltip } from 'react-tooltip';
 
 // Segurança --> carrousel horizontal 4
 import segIcon1 from '../../assets/images/google/workspace/dlp/seguranca-icon1.png'
 import segIcon2 from '../../assets/images/google/workspace/dlp/seguranca-icon2.png'
 import segIcon3 from '../../assets/images/google/workspace/dlp/seguranca-icon3.png'
 import manPC from '../../assets/images/google/workspace/seguranca/manComputer.png'
-import { Title } from '@mui/icons-material';
 
 
 // DLP
@@ -96,7 +93,7 @@ import pic4 from '../../assets/images/google/workspace/publicoAlvo/pic4.png'
 import pic5 from '../../assets/images/google/workspace/publicoAlvo/pic5.png'
 import pic6 from '../../assets/images/google/workspace/publicoAlvo/pic6.png'
 import Video from '../../components/Google-Components/Video';
-import videoSource from '../../assets/videos/googleworkspace.mp4'
+// import videoSource from '../../assets/videos/googleworkspace.mp4'
 
 
 
@@ -874,7 +871,7 @@ const GooglePage = () => {
                                 Workspace pode se tornar um <span className='span-orange'>aliado produtivo</span>?
                             </p>
                             <div className='video'>
-                                <Video source={videoSource}></Video>
+                                <Video source={''}></Video>
                             </div>
 
                             <div className='displayFlex'>
