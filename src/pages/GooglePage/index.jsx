@@ -159,6 +159,8 @@ import ultimo2 from '../../assets/images/google/workspace/ultima/2.png'
 import ultimo3 from '../../assets/images/google/workspace/ultima/3.png'
 import ultimo4 from '../../assets/images/google/workspace/ultima/4.png'
 
+import imgTeste from '../../assets/images/confirme.png'
+
 // Assinatura
 import assinatura from '../../assets/images/google/workspace/assinatura/academiav.png'
 
@@ -642,7 +644,7 @@ const GooglePage = () => {
                         Projeto para <span>ampliar</span> licenças na oferta atual do cliente.
                         </li>
                     </ul>`,
-                    `<img src='../../assets/images/confirme.png'</img>`,
+                    `<img src=${imgTeste} />`,
                 ]
             },
         },
