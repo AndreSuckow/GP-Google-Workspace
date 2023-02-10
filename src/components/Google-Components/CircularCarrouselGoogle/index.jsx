@@ -12,9 +12,9 @@ import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 
 
 import { ReactComponent as Icon1 } from '../../../assets/images/google/workspace/CircularCarrousel/img-1-Cloud.svg';
-import { ReactComponent as Icon2 } from '../../../assets/images/google/workspace/CircularCarrousel/img-2-porquinho.svg';
-import { ReactComponent as Icon3 } from '../../../assets/images/google/workspace/CircularCarrousel/img-3-world.svg';
-import { ReactComponent as Icon4 } from '../../../assets/images/google/workspace/CircularCarrousel/img-4-infinity.svg';
+import { ReactComponent as Icon2 } from '../../../assets/images/google/workspace/CircularCarrousel/img-2-infinity.svg';
+import { ReactComponent as Icon3 } from '../../../assets/images/google/workspace/CircularCarrousel/img-3-porquinho.svg';
+import { ReactComponent as Icon4 } from '../../../assets/images/google/workspace/CircularCarrousel/img-4-world.svg';
 
 const data = [
     {
@@ -23,18 +23,18 @@ const data = [
         image: <Icon1 />
     },
     {
-        title: "Item 2",
-        text: "Com este recurso, o cliente pode procurar por título de um filme, programas de TV, elenco ou canal.",
+        title: "Acessibilidade",
+        text: "Prático na configuração de pontos de acesso a um mesmo ambiente de trabalho.",
         image: <Icon2 />
     },
     {
-        title: "Item 3",
-        text: "Na página inicial, acessando através do direcional para baixo do controle remoto. Existem tiras por tema, indicações de conteúdos, programas de TV etc.",
+        title: "Otimização de custos",
+        text: "Econômico em hardware e software, incorporando diversas funcionalidades em um único serviço.",
         image: <Icon3 />
     },
     {
-        title: "Item 4",
-        text: "Na página inicial, acessando o Vivo Play, temos os aplicativos Nextflix, Amazon Prime Video, Youtube e Youtube Kids. Para Netflix, a contratação de planos é realizada diretamente com a Vivo.",
+        title: "Mobilidade",
+        text: "Com conexões múltiplas de dispositivos, o acesso pode ser realizado de qualquer área.",
         image: <Icon4 />
     },
 ]
