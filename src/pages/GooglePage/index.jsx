@@ -99,7 +99,7 @@ import pic4 from '../../assets/images/google/workspace/publicoAlvo/pic4.png'
 import pic5 from '../../assets/images/google/workspace/publicoAlvo/pic5.png'
 import pic6 from '../../assets/images/google/workspace/publicoAlvo/pic6.png'
 import Video from '../../components/Google-Components/Video';
-// import videoSource from '../../assets/videos/googleworkspace.mp4'
+import videoSource from '../../assets/videos/googleworkspace.mp4'
 
 
 
@@ -656,7 +656,7 @@ const GooglePage = () => {
                             <span>Ampliação</span> de licenças de outra oferta ou família para um cliente que já possui o Workspace;
                         </li><br>
                         <li>
-                        Projeto para <span>ampliar</span> licenças na oferta atual do cliente.
+                            Projetos de <span>upgrades parciais</span>.
                         </li>
                     </ul>`,
                     `<img src=${imgTeste} />`,
@@ -672,7 +672,7 @@ const GooglePage = () => {
             um número maior de fornecedores do que ele realmente necessita.`,
         },
         {
-            buttonText: 'Ofertas especias',
+            buttonText: 'Ofertas especiais',
             text: `A contratação de um pacote de serviços na Vivo pode garantir condições especiais ao cliente, possibilitando economia na contratação de fornecedores.`,
         },
         {
@@ -924,7 +924,7 @@ const GooglePage = () => {
                                 Workspace pode se tornar um <span className='span-orange'>aliado produtivo</span>?
                             </p>
                             <div className='video'>
-                                <Video source={''}></Video>
+                                <Video source={videoSource}></Video>
                             </div>
 
                             <div className='displayFlex'>
