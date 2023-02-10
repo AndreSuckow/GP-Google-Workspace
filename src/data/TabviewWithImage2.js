@@ -53,15 +53,15 @@ export const TabviewWithImageData2 = [
         title: 'Controle',
         text: `Ciente de que a <span>segurança</span> é uma demanda indispensável da transformação digital, o Google oferece recursos de uso simplificado, porém <span>arrojados</span>, auxiliando o gerenciamento de proteção da empresa.`,
         subTitle: 'Admin',
-        subText: `Admin Realiza o gerenciamento de usuários, dispositivos, além de configurações de segurança de maneira simples e prática.`,
+        subText: `Realiza o gerenciamento de usuários, dispositivos, além de configurações de segurança de maneira simples e prática.`,
     },
     {
         icon: Icon18,
         title: 'Controle',
         text: `Ciente de que a <span>segurança</span> é uma demanda indispensável da transformação digital, o Google oferece recursos de uso simplificado, porém <span>arrojados</span>, auxiliando o gerenciamento de proteção da empresa.`,
         subTitle: 'Endpoint Management',
-        subText: `Em caso de perda ou roubo de dispositivos, é possível manter os dados da empresa seguros com o gerenciamento de endpoints.Com isso, o TI será capaz de bloquear dispositivos e contas, além de eliminar 
-        dados confidenciais de um determinado smartphone, tablet ou computador.`,
+        subText: `Em caso de perda ou roubo de dispositivos, é possível manter os dados da empresa seguros com o gerenciamento de endpoints. 
+        Com isso, o TI será capaz de bloquear dispositivos e contas, além de eliminar dados confidenciais de um determinado smartphone, tablet ou computador.`,
     },
     {
         icon: Icon19,

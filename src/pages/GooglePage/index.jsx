@@ -64,6 +64,12 @@ import TabViewWithImage from '../../components/Google-Components/TabViewWithImag
 import { TabviewWithImageData1 } from "../../data/TabviewWithImage.js";
 import { TabviewWithImageData2 } from "../../data/TabviewWithImage2.js";
 
+import indSetasbgRoxo from '../../assets/images/clickTip/indSetasbgRoxo.png'
+import indSetasbgBranco from '../../assets/images/clickTip/indSetasbgBranco.png'
+import clickImagensExpInfo from '../../assets/images/clickTip/clickImagensExpInfo.png'
+import clickConceitosExpInfo from '../../assets/images/clickTip/clickConceitosExpInfoBgRoxo.png'
+import clickImagensExpInfoBgRoxo from '../../assets/images/clickTip/clickImagensExpInfoBgRoxo.png'
+
 // Na prática 2 --> carrousel horizontal 3
 
 import C3img1 from '../../assets/images/google/workspace/carrousel-3/1.png'
@@ -179,7 +185,7 @@ const GooglePage = () => {
         },
         {
             title: 'Segurança & Privacidade',
-            text: `A garantia de que todos da equipe poderão trabalhar na versão mais recente de um arquivo, em tempo real, sendo acessada de qualquer lugar.`,
+            text: `Preservação de dados vigorosa da marca Google, contando com uma infraestrutura completa na defesa de ataques.`,
             imgCarrousel: imagemCarrousel4
         }
     ]
@@ -427,6 +433,22 @@ const GooglePage = () => {
 
     ]
 
+    const carrouselData11 = [
+        {
+            text: `<span>Vazamento de dados e/ou documentos sigilosos.</span>`,
+            imgCarrousel: segIcon1
+        },
+        {
+            text: `<span>Perdas de materiais.</span>`,
+
+            imgCarrousel: segIcon2
+        },
+        {
+            text: `<span>Hackeamento de contas.</span>`,
+            imgCarrousel: segIcon3
+        },   
+    ]
+
     const showDownSliderGoogleData = [
         {
             image: image1,
@@ -620,6 +642,7 @@ const GooglePage = () => {
                         Projeto para <span>ampliar</span> licenças na oferta atual do cliente.
                         </li>
                     </ul>`,
+                    `<img src='../../assets/images/confirme.png'</img>`,
                 ]
             },
         },
@@ -712,7 +735,6 @@ const GooglePage = () => {
                                 maior conexão entre as equipes, trazendo
                                 diferentes impactos benéficos ao negócio.<br></br>
                                 <span>Clique nas setas e descubra os benefícios:</span>
-
                             </TitleGoogle>
                             <div className='div-flex'>
                                 <CarrouselGoogle data={carrouselData} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' />
@@ -742,10 +764,14 @@ const GooglePage = () => {
                                     </div>
                                     <img src={Vivinho} alt="" />
                                 </div>
-                                <div className='div-flex3'>
-                                    <ShowDownSliderGoogle data={showDownSliderGoogleData2} />
+
+                                <div className='div-mae-flex3'>
+                                    <img src={fundamentos2Img} alt="" className='fundamentos2' />
+                                    <div className='div-flex3'>
+                                        <ShowDownSliderGoogle data={showDownSliderGoogleData2} />
+                                    </div>
                                 </div>
-                                <img src={fundamentos2Img} alt="" className='fundamentos2' />
+
                             </>
                         </Container>
                     </Section>
@@ -763,6 +789,7 @@ const GooglePage = () => {
                                 <br></br>
                                 a dia de diferentes tipos de negócio.
                             </TitleGoogle>
+                            <img src={indSetasbgRoxo} alt="" className='clickSetasFix' />
                             <CarrouselGoogle data={carrouselData2} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo2' />
                             <TitleGoogle
                                 title="Produtividade"
@@ -778,11 +805,12 @@ const GooglePage = () => {
                             <TabViewWithImage data={TabviewWithImageData2} direction="row-reverse"></TabViewWithImage>
                             <TitleGoogle
                                 title="Na Prática"
-                                titleConfig={{ textAlign: 'center', color: '#FFB84C' }}
+                                titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '4rem' }}
                                 paragraphConfig={{ textAlign: 'center', color: '#ffff' }}>
                                 O Google Workspace pode ser aplicado<br></br>
                                 nos mais diferentes cenários possíveis.
                             </TitleGoogle>
+                            <img src={indSetasbgRoxo} alt="" className='clickSetasFix' />
                             <CarrouselGoogle data={carrouselData3} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo2' />
                         </Container>
                     </Section>
@@ -800,6 +828,7 @@ const GooglePage = () => {
                                 Líder no setor, o Google dispõe de um controle preventivo eficaz. Conheça alguns dados de desempenho para compreender quantas ameaças são eliminadas
                                 por minutos com a capacidade combativa do Workspace.
                             </TitleGoogle>
+                            <img src={indSetasbgBranco} alt="" className='clickSetasFix'/>
                             <div className='div-flex4'>
                                 <img src={manPC} alt="" />
                                 <CarrouselGoogle data={carrouselData4} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo4' />
@@ -822,8 +851,8 @@ const GooglePage = () => {
 
                                         Essa prevenção reduz riscos, como:
                                     </TitleGoogle>
-
-                                    <div className='dlp-riscos'>
+                                    
+                                     <div className='dlp-riscos'>
                                         <div className='risco'>
                                             <img src={segIcon1} alt="" />
                                             <p>Vazamento de dados e/ou<br></br> documentos sigilosos.</p>
@@ -836,7 +865,8 @@ const GooglePage = () => {
                                             <img src={segIcon3} alt="" />
                                             <p>Hackeamento de contas.</p>
                                         </div>
-                                    </div>
+                                    </div> 
+
                                 </div>
                                 <img className='dlp-img' src={manLaptop} alt="" />
                             </div>
@@ -847,7 +877,7 @@ const GooglePage = () => {
                     <Section id="targetMenu4">
                         <Container>
                             <TitleGoogle
-                                title="Público - Alvo"
+                                title="Público-alvo"
                                 titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '-4rem' }}
                                 paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
                                 spanClass='span-orange'>
@@ -860,10 +890,10 @@ const GooglePage = () => {
                             <div className='div-flex4b'>
                                 <img src={WomanCel} alt="" />
                                 <div className='div-flex-direction'>
-                                    <ShowDownSliderGoogle data={showDownSliderGoogleData3} />
                                     <div className='fundamentosImg'>
                                         <img src={fundamentosImg} alt="" className='fundamentos-click' />
                                     </div>
+                                    <ShowDownSliderGoogle data={showDownSliderGoogleData3} />
                                 </div>
                             </div>
                             <p className='pSolto'>
@@ -888,7 +918,7 @@ const GooglePage = () => {
 
                                     Assim, reduzindo as despesas, na mesma<br></br>
                                     crescente em que gera eficácia na<br></br>
-                                    rotina laboral.
+                                    rotina laboral.<br></br><br></br>
 
                                     Clique nas setas para conferir alguns dados<br></br>
                                     divulgados pelo Google sobre a realidade dos<br></br>
@@ -896,6 +926,7 @@ const GooglePage = () => {
                                 </TitleGoogle>
                                 <img src={predios} alt="" />
                             </div>
+                            <img src={indSetasbgRoxo} alt="" className='clickSetasFix'/>
                             <CarrouselGoogle data={carrouselData5} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo4' />
                             <TitleGoogle
                                 title="Tipos de Oferta"
@@ -927,7 +958,7 @@ const GooglePage = () => {
                             </TitleGoogle>
                             <div className='div-flex5'>
                                 <CarrouselGoogle data={carrouselData6} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' />
-                                <img src={clickSetas} alt="" className='clickSetas' />
+                                <img src={indSetasbgBranco} alt="" className='clickSetas' />
                             </div>
                             <TitleGoogle
                                 title="Enterprise"
@@ -939,7 +970,7 @@ const GooglePage = () => {
                             </TitleGoogle>
                             <div className='div-flex5'>
                                 <CarrouselGoogle data={carrouselData7} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' />
-                                <img src={clickSetas} alt="" className='clickSetas' />
+                                <img src={indSetasbgBranco} alt="" className='clickSetas' />
                             </div>
                         </Container>
                     </Section>
@@ -955,7 +986,7 @@ const GooglePage = () => {
                                 de uma empresa? Use os botões para ler
                                 a história de Ícaro:
                             </TitleGoogle>
-
+                            <img src={indSetasbgRoxo} alt="" className='clickSetasFix'/>
                             <div className='ajustandoIMG'>
                                 <CarrouselGoogle data={carrouselData8} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' />
                             </div>
@@ -969,7 +1000,7 @@ const GooglePage = () => {
                                 formatos de comercialização para atender as necessidades das empresas. Conheça abaixo:
                             </TitleGoogle>
                             <div className="div-flex-comercializacao">
-                                <img src={clickImagemInfo} alt="" className="click-expand-conceitos" />
+                                <img src={clickImagensExpInfo} alt="" className="click-expand-conceitos" />
                                 <ShowDownSliderGoogle data={showDownSliderGoogleData4} />
                             </div>
                             <div className='div-flex-eficiencia' id="targetMenu6">
@@ -987,6 +1018,7 @@ const GooglePage = () => {
                                 </TitleGoogle>
                                 <CarrouselGoogle data={carrouselData9} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' vertical={true} />
                             </div>
+                            <img src={indSetasbgRoxo} alt="" className='clickSetasFix'/>
 
 
                         </Container>
@@ -1000,11 +1032,11 @@ const GooglePage = () => {
                                 paragraphConfig={{ textAlign: 'left', color: '#ffff' }}
                                 spanClass='span-orange'>
 
-                                Pioneira no oferecimento de pacotes de internet para telefonia celular, a Vivo atua no Brasil desde 2003, sendo reconhecida por sua entrega de qualidade e competência. Referência em transformação digital, aumentou seu portfólio de acordo com as evoluções tecnológicas e a percepção das dores do mercado. <br></br><br></br>
-
-                                Hoje, a empresa atua como um hub de soluções digitais, integrando os mais diferentes tipos de serviço.
+                                Pioneira no oferecimento de pacotes de internet para telefonia celular, a Vivo atua no Brasil desde 2003, sendo reconhecida por sua entrega de qualidade e competência. Referência em transformação digital, aumentou seu portfólio de acordo com as evoluções tecnológicas e a percepção das dores do mercado.
+                                Hoje, a empresa atua como um hub de soluções digitais, integrando os mais diferentes tipos de serviço.<br></br><br></br>
                                 Na Vivo, o cliente conta com vantagens ao contratar ou transferir seus serviços para a empresa.
                             </TitleGoogle>
+                            <img src={clickConceitosExpInfo} alt="" className='clickSetasFix'/>
                             <Tab data={tabData}></Tab>
                         </Container>
                     </Section>
@@ -1062,6 +1094,7 @@ const GooglePage = () => {
                                 roupas que integra soluções digitais ao seu dia a dia. <br></br>
                                 Clique nos botões para ler.
                             </TitleGoogle>
+                            <img src={indSetasbgRoxo} alt="" className='clickSetasFix' />
                             <div className='ajustandoIMG2'>
                                 <CarrouselGoogle data={carrouselData10} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' />
                             </div>
@@ -1069,7 +1102,7 @@ const GooglePage = () => {
                     </Section>
                     <Section>
                         <Container>
-                            <img src={assinatura} alt="" className='assinatura'/>
+                            <img src={assinatura} alt="" className='assinatura' />
                         </Container>
                     </Section>
                 </div>
