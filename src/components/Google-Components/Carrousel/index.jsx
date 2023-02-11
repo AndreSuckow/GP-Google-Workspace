@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 
 import './index.css';
@@ -10,13 +10,21 @@ import arrowPrevDefault from '../../../assets/images/google/workspace/carrousel-
 import arrowNextDefault from '../../../assets/images/google/workspace/carrousel-1/arrow-left.png'
 
 
-const CarrouselGoogle = ({ data, arrowPrev = '', arrowNext = '', slideShow = 1, carrouselType = '', vertical = false,}) => {
+const CarrouselGoogle = ({ 
+                            data, 
+                            arrowPrev = '', 
+                            arrowNext = '', 
+                            slideShow = 1, 
+                            carrouselType = '', 
+                            vertical = false,
+                            infinite = true
+                        }) => {
     const slider = useRef(null)
 
     const settings = {
         dots: true,
         arrows: false,
-        infinite: true,
+        infinite: infinite,
         speed: 500,
         slidesToShow: slideShow,
         vertical: vertical,
@@ -47,7 +55,7 @@ const CarrouselGoogle = ({ data, arrowPrev = '', arrowNext = '', slideShow = 1, 
     }
 
     return (
-        <div className={'carrousel' + ' ' + carrouselType}>
+        <div className={`carrousel ${ carrouselType }`}>
             <Slider {...settings} ref={slider}>
                 {data.map((item, index) => {
                     return (
@@ -59,7 +67,7 @@ const CarrouselGoogle = ({ data, arrowPrev = '', arrowNext = '', slideShow = 1, 
                                     {(item.title || item.text) && (
                                         <div className='item-text'>
                                             {item.title && <h3>{item.title}</h3>}
-                                            {item.text && <p dangerouslySetInnerHTML={{ __html: item.text }}></p>}
+                                            {item.text && <p>{ item.text }</p> }
                                         </div>
                                     )}
                                 </div>
