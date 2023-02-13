@@ -87,7 +87,7 @@ import data8 from '../../data/carrousels/Carrousel8';
 import data9 from '../../data/carrousels/Carrousel9';
 import data10 from '../../data/carrousels/Carrousel10';
 // import data11 from '../../data/carrosels/Carrousel11';
-import data12 from '../../data/carrousels/Carrousel2';
+import data12 from '../../data/carrousels/Carrousel12';
 
 // showDownSliderGoogleData data
 import GData from '../../data/showDownSliderGoogleData/GData1';
