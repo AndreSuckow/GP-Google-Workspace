@@ -15,15 +15,18 @@ import bg2branca2 from '../../assets/images/bg_3.png'
 // O que é o Workspace? --> showDownSliderGoogle
 import fundamentosImg from '../../assets/images/click-imagens.png'
 import ShowDownSliderGoogle from '../../components/Google-Components/ShowDownSliderGoogle';
+import avisoSetas from '../../assets/images/google/workspace/CircularCarrousel/avisoSetas.png'
 
 // flexibilidade --> Circular Carrousel Google
 import CircularCarrouselGoogle from '../../components/Google-Components/CircularCarrouselGoogle';
+import setaUp from "../../assets/images/google/workspace/CircularCarrousel/setinhaup.png"
+import setaDown from "../../assets/images/google/workspace/CircularCarrousel/setinhadown.png"
 
 // Colaboração  --> carrousel horizontal 1
 import CarrouselGoogle from '../../components/Google-Components/Carrousel';
 import arrowLeft from '../../assets/images/google/workspace/carrousel-1/arrow-left.png'
 import arrowRight from '../../assets/images/google/workspace/carrousel-1/arrow-right.png'
-import peopleTalking from '../../assets/images/google/workspace/carrousel-1/humans-talking.png'
+import avisoSetasBrancas from '../../assets/images/google/workspace/carrousel-1/avisoSetasBrancas.png'
 
 // Produtividade --> showDownSliderGoogle 2
 import Vivinho from '../../assets/images/google/workspace/produtividade/vivinho.png'
@@ -131,16 +134,14 @@ const GooglePage = () => {
             <div className='divMae'>
                 <div className='maskara'>
 
-
-                    <Section id="targetMenu">
-
+                    <Section id="targetMenu"
+                             lineBG='#bd4aff'>
                         <Container>
-
                             <TitleGoogle
                                 title="O que é o Workspace?"
                                 titleConfig={{ textAlign: 'center', color: '#ffff' }}
                                 paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
-                                spanClass='span-orange'>
+                                spanClass='span-white'>
                                 Conglomerado de aplicativos colaborativos em
                                 <br></br>
                                 nuvem, o Google Workspace inclui títulos como
@@ -148,6 +149,8 @@ const GooglePage = () => {
                                 <span>Gmail, Calendar, Drive, Docs, Sheets, Slides,
                                     <br></br>
                                     Meets</span>, entre outros.
+                                <br></br>
+                                <br></br>
                                 A partir de suas ferramentas, fomenta
                                 <br></br>
                                 a produtividade, comunicação e colaboração
@@ -157,43 +160,50 @@ const GooglePage = () => {
                             <img src={fundamentosImg} alt="" className="click-expand-conceitos" />
 
                             <ShowDownSliderGoogle data={GData} />
+                        </Container>
+                    </Section>
+
+                    <Section customClass='bgWhite'
+                             lineBG='#bd4aff'>
+                        <Container>
                             <TitleGoogle
 
                                 title="Flexibilidade"
-                                titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '4rem' }}
-                                paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
-                                spanClass='span-orange'>
+                                titleConfig={{ textAlign: 'center', color: '#660099', marginTop: '4rem' }}
+                                paragraphConfig={{ textAlign: 'center', color: 'black' }}
+                                spanClass='span-purple2'>
                                 Os recursos <span>ajustáveis e práticos</span>,
+                                compatíveis com diferentes
                                 <br></br>
-                                compatíveis com diferentes dispositivos
+                                dispositivos disponíveis no mercado, são fatores que ajudam a
                                 <br></br>
-                                disponíveis no mercado, são fatores
-                                <br></br>
-                                que ajudam a sustentar a relevância
-                                <br></br>
-                                do Workspace no mercado.
+                                sustentar a relevância do Workspace no mercado.
 
                             </TitleGoogle>
-
+                            <img className='clickSetasFix' src={avisoSetas} alt="" />
                             <CircularCarrouselGoogle></CircularCarrouselGoogle>
+                        </Container>
+                    </Section>
 
+                    <Section>
+                        <Container>
                             <TitleGoogle
                                 title="Colaboração"
-                                titleConfig={{ textAlign: 'center', color: '#FFB84C' }}
+                                titleConfig={{ textAlign: 'center', color: '#ffff' }}
                                 paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
-                                spanClass='span-orange'>
-                                As ferramentas integrativas do serviço propõem
-                                maior conexão entre as equipes, trazendo
-                                diferentes impactos benéficos ao negócio.<br></br>
-                                <span>Clique nas setas e descubra os benefícios:</span>
+                                spanClass='span-white'>
+                                As ferramentas integrativas do serviço propõem maior conexão entre
+                                <br></br>
+                                as equipes, trazendo diferentes impactos benéficos ao negócio.
+                                <br></br><br></br>
                             </TitleGoogle>
                             <div className='div-flex'>
-                                <CarrouselGoogle data={data1} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' />
-                                <img src={peopleTalking} alt="" />
+                                <CarrouselGoogle data={data1} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1'/>
                             </div>
-
+                            <div className='espace'>
+                                <img className='clickSetasFix' src={avisoSetasBrancas} alt="" />
+                            </div>
                         </Container>
-
                     </Section>
 
                     <Section bg={bg2branca} bgOrientation='center center' bgSize='100% 100%'>
@@ -279,10 +289,10 @@ const GooglePage = () => {
                                 Líder no setor, o Google dispõe de um controle preventivo eficaz. Conheça alguns dados de desempenho para compreender quantas ameaças são eliminadas
                                 por minutos com a capacidade combativa do Workspace.
                             </TitleGoogle>
-                            <img src={indSetasbgBranco} alt="" className='clickSetasFix'/>
+                            <img src={indSetasbgBranco} alt="" className='clickSetasFix' />
                             <div className='div-flex4'>
                                 <img src={manPC} alt="" />
-                                <CarrouselGoogle data={data4} infinite={ false } arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo4' />
+                                <CarrouselGoogle data={data4} infinite={false} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo4' />
                             </div>
                             <div className='dlp-content'>
                                 <div className='dlp-wrapper'>
@@ -302,14 +312,14 @@ const GooglePage = () => {
 
                                         Essa prevenção reduz riscos, como:
                                     </TitleGoogle>
-                                    <CarrouselGoogle 
-                                        data={data12} 
-                                        arrowPrev={arrowLeft} 
-                                        arrowNext={arrowRight} 
-                                        slideShow={1} 
+                                    <CarrouselGoogle
+                                        data={data12}
+                                        arrowPrev={arrowLeft}
+                                        arrowNext={arrowRight}
+                                        slideShow={1}
                                         carrouselType='estilo1' />
-                                    
-                                     {/* <div className='dlp-riscos'>
+
+                                    {/* <div className='dlp-riscos'>
                                         <div className='risco'>
                                             <img src={segIcon1} alt="" />
                                             <p>Vazamento de dados e/ou<br></br> documentos sigilosos.</p>
@@ -337,7 +347,7 @@ const GooglePage = () => {
                                 title="Público-alvo"
                                 titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '-4rem' }}
                                 paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
-                                spanClass='span-orange'>
+                                spanClass='span-white'>
                                 Buscando auxiliar demandas de produtividade<br></br>
                                 e compartilhamento de dados de <span>médias e grandes</span><br></br>
                                 empresas, o Workspace possui diversificação<br></br>
@@ -355,7 +365,7 @@ const GooglePage = () => {
                             </div>
                             <p className='pSolto'>
                                 Afinal de contas, como e para quem o Google<br></br>
-                                Workspace pode se tornar um <span className='span-orange'>aliado produtivo</span>?
+                                Workspace pode se tornar um <span className='span-white'>aliado produtivo</span>?
                             </p>
                             <div className='video'>
                                 <Video source={''}></Video>
@@ -366,7 +376,7 @@ const GooglePage = () => {
                                     title="Impacto Econômico"
                                     titleConfig={{ textAlign: 'left', color: '#FFB84C', marginTop: '' }}
                                     paragraphConfig={{ textAlign: 'left', color: '#ffff' }}
-                                    spanClass='span-orange'>
+                                    spanClass='span-white'>
                                     Podemos considerar como trunfos<br></br>
                                     do Workspace, o aperfeiçoamento<br></br>
                                     da comunicação e a estruturação otimizada<br></br>
@@ -383,13 +393,13 @@ const GooglePage = () => {
                                 </TitleGoogle>
                                 <img src={predios} alt="" />
                             </div>
-                            <img src={indSetasbgRoxo} alt="" className='clickSetasFix'/>
+                            <img src={indSetasbgRoxo} alt="" className='clickSetasFix' />
                             <CarrouselGoogle data={data5} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo4' />
                             <TitleGoogle
                                 title="Tipos de Oferta"
                                 titleConfig={{ textAlign: 'center', color: '#FFB84C', marginTop: '8rem' }}
                                 paragraphConfig={{ textAlign: 'center', color: '#ffff' }}
-                                spanClass='span-orange'>
+                                spanClass='span-white'>
                                 Distribuído em planos mensais ou anuais, as ofertas<br></br>
                                 do Workspace são separadas pelas seguintes famílias:<br></br>
                                 <span>Business</span> e <span>Enterprise</span>.<br></br><br></br>
@@ -443,7 +453,7 @@ const GooglePage = () => {
                                 de uma empresa? Use os botões para ler
                                 a história de Ícaro:
                             </TitleGoogle>
-                            <img src={indSetasbgRoxo} alt="" className='clickSetasFix'/>
+                            <img src={indSetasbgRoxo} alt="" className='clickSetasFix' />
                             <div className='ajustandoIMG'>
                                 <CarrouselGoogle data={data8} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' />
                             </div>
@@ -451,7 +461,7 @@ const GooglePage = () => {
                                 title="Cenários de comercialização"
                                 titleConfig={{ textAlign: 'left', color: '#FFB84C', marginTop: '6rem' }}
                                 paragraphConfig={{ textAlign: 'left', color: '#ffff' }}
-                                spanClass='span-orange'>
+                                spanClass='span-white'>
                                 Englobando seu atendimento tanto para os clientes que não utilizam o Workspace,<br></br>
                                 quanto os que desejam dar um upgrade em sua contratação, dispomos de dois <br></br>
                                 formatos de comercialização para atender as necessidades das empresas. Conheça abaixo:
@@ -465,7 +475,7 @@ const GooglePage = () => {
                                     title="Eficiência"
                                     titleConfig={{ textAlign: 'left', color: '#FFB84C', marginTop: '6rem' }}
                                     paragraphConfig={{ textAlign: 'left', color: '#ffff' }}
-                                    spanClass='span-orange'>
+                                    spanClass='span-white'>
                                     Propiciando aumento produtivo e assertividade comunicativa nas operações laborais,
                                     o Workspace sustenta seu impacto através
                                     da <span>integração.</span>
@@ -475,7 +485,7 @@ const GooglePage = () => {
                                 </TitleGoogle>
                                 <CarrouselGoogle data={data9} arrowPrev={arrowLeft} arrowNext={arrowRight} slideShow={1} carrouselType='estilo1' vertical={true} />
                             </div>
-                            <img src={indSetasbgRoxo} alt="" className='clickSetasFix'/>
+                            <img src={indSetasbgRoxo} alt="" className='clickSetasFix' />
 
 
                         </Container>
@@ -487,13 +497,13 @@ const GooglePage = () => {
                                 title="Vivo é a Solução!"
                                 titleConfig={{ textAlign: 'center', color: '#f784da' }}
                                 paragraphConfig={{ textAlign: 'left', color: '#ffff' }}
-                                spanClass='span-orange'>
+                                spanClass='span-white'>
 
                                 Pioneira no oferecimento de pacotes de internet para telefonia celular, a Vivo atua no Brasil desde 2003, sendo reconhecida por sua entrega de qualidade e competência. Referência em transformação digital, aumentou seu portfólio de acordo com as evoluções tecnológicas e a percepção das dores do mercado.
                                 Hoje, a empresa atua como um hub de soluções digitais, integrando os mais diferentes tipos de serviço.<br></br><br></br>
                                 Na Vivo, o cliente conta com vantagens ao contratar ou transferir seus serviços para a empresa.
                             </TitleGoogle>
-                            <img src={clickConceitosExpInfo} alt="" className='clickSetasFix'/>
+                            <img src={clickConceitosExpInfo} alt="" className='clickSetasFix' />
                             <Tab data={tabData}></Tab>
                         </Container>
                     </Section>

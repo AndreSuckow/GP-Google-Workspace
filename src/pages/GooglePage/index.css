@@ -42,10 +42,6 @@
 
 .div-flex2{
     margin-top: 5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2vw;
 }
 
 .div-flex2 img {
@@ -58,7 +54,7 @@
 .div-flex3{
     display: flex;
     flex-direction: row;
-    width: 94%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -258,7 +254,7 @@
     font-size: 1.5rem !important;
 }
 
-.span-orange{
+.span-white{
     color: rgb(255, 184, 76);
 }
 
@@ -465,3 +461,20 @@
     flex-direction: row;
 }
 
+section>.bottom-line {
+    bottom: 0;
+    height: 1.5rem;
+    left: 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+
+.bgWhite{
+    background-color: white;
+}
+
+.espace{
+    margin-top: 6rem;
+}

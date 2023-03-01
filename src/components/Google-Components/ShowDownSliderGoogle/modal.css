@@ -16,7 +16,7 @@
 .modal-content {
   background: #fff;
   margin: 0 10px;
-  padding: 2rem 1rem;
+  padding: 2rem 3rem;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
@@ -48,20 +48,21 @@
   background-color: #660099;
 }
 
-.modal-showDown{
+.modal-showDown {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .modal-showDown img {
-  width: 13rem;
+  width: 10.5rem;
 }
 
 .modal-showDown h2,
 .modal-showDown span{
-  color: #660099
+  color: #660099;
+  text-align: left;
 }
 
 .modal-lg{

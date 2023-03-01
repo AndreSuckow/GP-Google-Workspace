@@ -4,6 +4,9 @@ import './index.css'
 import gsap from 'gsap'
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 
+import setaUp from "../../../assets/images/google/workspace/CircularCarrousel/setinhaup.png"
+import setaDown from "../../../assets/images/google/workspace/CircularCarrousel/setinhadown.png"
+
 // import { ReactComponent as Icon1 } from '../../../assets/images/carrousel/circularCarrousel/img-1.svg';
 // import { ReactComponent as Icon2 } from '../../../assets/images/carrousel/circularCarrousel/img-2.svg';
 // import { ReactComponent as Icon3 } from '../../../assets/images/carrousel/circularCarrousel/img-3.svg';
@@ -195,13 +198,20 @@ const CircularCarrousel = () => {
                     </div>
                     <div className='controls'>
                         <button className='prev' onClick={handlePrevButton}>
-                            <span className='web'>&uArr;</span>
-                            <span className='mobile'>&lArr;</span>
+                            {/* <span className='web'>&uArr;</span>
+                            <span className='mobile'>&lArr;</span> */}
+
+                            <span className='web'><img src={setaUp}/></span>
+                            <span className='mobile'><img src={setaUp}/></span>
+                            
                         </button>
                         <p><span>0{itemActive + 1}</span>/0{totalItems}</p>
                         <button className='next' onClick={handleNextButton}>
-                            <span className='web'>&dArr;</span>
-                            <span className='mobile'>&rArr;</span>
+                            {/* <span className='web'>&dArr;</span>
+                            <span className='mobile'>&rArr;</span> */}
+
+                            <span className='web'><img src={setaDown}/></span>
+                            <span className='mobile'><img src={setaDown}/></span>
                         </button>
                     </div>
                 </div>

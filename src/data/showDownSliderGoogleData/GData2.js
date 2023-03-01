@@ -22,7 +22,7 @@ const data = [
             image: imgModal1,
             title: 'Minimalista e robusto',
             p: [
-                `Interface amigável que destaca as ferramentas úteis e mais recorrentes.`,
+                `Interface amigável que destaca<br> as ferramentas úteis e mais recorrentes.`,
             ]
         },
     },
@@ -38,9 +38,10 @@ const data = [
             image: imgModal2,
             title: 'Inteligência Artificial Nativa',
             p: [
-                `Integração instantânea com recursos baseados em IA* para automatização 
+                `Integração instantânea com recursos<br> baseados em IA* para automatização 
                 de tarefas.`,
-            ]
+                `<br><span style="color: #BD4AFF;" >*IA = Inteligência artificial</span>`
+            ],
         },
     },
 
@@ -55,7 +56,7 @@ const data = [
             image: imgModal3,
             title: 'Produtividade e facilidade',
             p: [
-                `Ferramentas práticas que impactam diretamente na produtividade dos usuários.`,
+                `Ferramentas práticas que impactam<br> diretamente na produtividade dos usuários.`,
             ]
         },
     },
@@ -70,7 +71,7 @@ const data = [
             image: imgModal4,
             title: 'Manutenção Integrada',
             p: [
-                `Interface amigável que destaca as ferramentas úteis e mais recorrentes.`,
+                `Plataforma com atualizações automáticas<br> e administração completa de usuários.`,
             ]
         },
     },
