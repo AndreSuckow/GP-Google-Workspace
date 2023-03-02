@@ -6,7 +6,7 @@ const Text1 = () => {
     return (
         <>
             <span>Com</span> armazenamento de conta de <span>30 GB</span> por utilizador, o plano 
-            inclui os principais aplicativos do Google, como Gmail, Calendar, Docs e Chat.
+            inclui os principais aplicativos do Google, como Gmail, Calendar, Docs e Chat.<br></br><br></br>
             As reuniões no Meet contam com o limite de 300 usuários, além de possuir funcionalidades 
             extras, como desfoque de fundo, quadro branco e legendas ao vivo.
         </>

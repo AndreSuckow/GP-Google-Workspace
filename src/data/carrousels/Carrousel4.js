@@ -13,7 +13,7 @@ const tooltipConfigs = {
 const Text1 = () => {
     return (
         <>
-            de mensagens de <span id='tooltip-1'>spam</span> são bloqueadas pelo Google Workspace.
+            de mensagens de <span id='tooltip-1'>spam</span> são bloqueadas<br></br> pelo Google Workspace.
 
             <Tooltip
                 anchorId={'tooltip-1'}
@@ -21,7 +21,7 @@ const Text1 = () => {
                 className={tooltipConfigs.class}
                 clickable={tooltipConfigs.clickable}
                 delayHide={tooltipConfigs.delayHide} >
-                <p style={{ fontSize: '.9rem', padding: 0 }} >
+                <p style={{ fontSize: '.9rem', padding: '0.5rem', }} >
                     *Spam = Conteúdos enviados por e-mail sem consentimento do usuário.<br/>
                     Exemplo: propagandas e boatos.'    
                 </p>

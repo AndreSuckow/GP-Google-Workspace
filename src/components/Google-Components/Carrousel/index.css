@@ -32,7 +32,7 @@
 
 .estilo1 .item-content {
     padding-top: 3rem;
-}
+} 
 
 .estilo1 .item-content span{
     color: #660099 !important;
@@ -41,8 +41,6 @@
 .estilo1 .item-content img {
     width: 10.5rem;
     padding: 1rem;
-    margin-left: 4rem;
-    margin-bottom: 2rem;
 }
 
 .estilo1 .item-content h3 {
@@ -58,7 +56,7 @@
     color: #000;
     font-weight: 100;
     width: 77%;
-    margin: 3vw 3vw 3vw 0vw;
+    margin: 1vw 3vw 3vw 0vw;
 }
 
 .carrousel.estilo2 {
@@ -70,6 +68,7 @@
 
 .estilo2 .item-content {
     padding: 0 5rem;
+    gap: 2rem;
 }
 
 .estilo2 .item-content img {
@@ -113,7 +112,8 @@
 
 .estilo4 .item-content p {
     color: black;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem 1rem 3rem 1rem;
+    text-align: center;
 }
 
 .estilo4 .item-content span {
@@ -159,10 +159,22 @@
 
 .carrousel .controls button img {
     width: 3rem;
+    transition: 1s;
+}
+
+.carrousel .controls button img:hover {
+    width: 3rem;
+    transform: scale(1.1);
 }
 
 .carrousel .controls button.next img {
     transform: scaleX(1);
+    transition: 1s;
+}
+
+.carrousel .controls button.next img:hover {
+    transform: scaleX(1);
+    transform: scale(1.1);
 }
 
 .carrousel .slick-track {

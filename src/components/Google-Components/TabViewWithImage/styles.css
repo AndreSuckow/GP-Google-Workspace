@@ -17,7 +17,7 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 1rem;
-    row-gap: 1rem;
+    row-gap: 2rem;
     width: 17rem;
     z-index: 1;
 }

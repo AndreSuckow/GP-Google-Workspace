@@ -57,6 +57,8 @@
     border: solid;
 }
 
+
+
 .show-down-slider .show-down-wrapper .slider.show .content-wrapper .content p {
     font-family: vivo-bold !important;
     background-color: #ffff;
@@ -70,7 +72,14 @@
     padding: 1.5rem;
 }
 
-
+.div-flex4b .show-down-slider .show-down-wrapper .slider.show .content-wrapper .content p {
+    background-color: transparent;
+    border-radius: 0.1vw;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #b3d683;
+    border-color: #BD4AFF;
+}
 
 
 .modal-lg{

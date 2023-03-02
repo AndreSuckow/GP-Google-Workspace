@@ -1,7 +1,7 @@
 .slick-dots {
     position: absolute;
     bottom: -25px;
-    display: block;
+    display: none;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -59,7 +59,7 @@
 }
 
 .slick-dots .slick-active button:before {
-    color: #b3d681 !important;
+    color: #FF98B3 !important;
 }
 
 .div-flex4 .slick-dots li button:before, .div-flex5 .slick-dots li button:before,
@@ -68,5 +68,5 @@
 }
 .div-flex4  .slick-dots .slick-active button:before, .div-flex5  .slick-dots .slick-active button:before,
 .dlp-content  .slick-dots .slick-active button:before, .div-flex5  .slick-dots .slick-active button:before {
-    color: #fe9901 !important;
+    color: #FF98B3 !important;
 }
