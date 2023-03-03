@@ -1,5 +1,5 @@
 import React from 'react'
-import './index.css'
+
 
 // components-gerais/intro
 import Section from '../../components/Section'
@@ -103,6 +103,8 @@ import GData4 from '../../data/showDownSliderGoogleData/GData4';
 import '../../components/Google-Components/Carrousel/carrouselFix.css';
 import Tab from '../../components/Google-Components/Tab';
 
+import './index.css'
+
 const GooglePage = () => {
 
     const tabData = [
@@ -142,7 +144,7 @@ const GooglePage = () => {
                             <TitleGoogle
                                 title="O que é o Workspace?"
                                 titleConfig={{ textAlign: 'center', color: '#ffff' }}
-                                paragraphConfig={{ textAlign: 'center', color: '#ffff', width: '75%' }}
+                                paragraphConfig={{ fontSize: 'font-size: clamp(24px, 3vw, 24px)', textAlign: 'center', color: '#ffff', width: '75%' }}
                                 spanClass='span-white'>
                                 Conglomerado de aplicativos colaborativos em nuvem, o Google 
                                 Workspace inclui títulos como <span>Gmail, Calendar, Drive, Docs, Sheets,
@@ -154,8 +156,9 @@ const GooglePage = () => {
                                 entre as equipes, baseada em três fundamentos:
                             </TitleGoogle>
                             <img src={fundamentosImg} alt="" className="click-expand-conceitos" />
-
-                            <ShowDownSliderGoogle data={GData} />
+                            <div className='borderNone'>
+                                <ShowDownSliderGoogle data={GData} />
+                            </div>
                         </Container>
                     </Section>
 
@@ -280,7 +283,7 @@ const GooglePage = () => {
                             <TitleGoogle
                                 title="Segurança"
                                 titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '4rem' }}
-                                paragraphConfig={{ textAlign: 'left', color: 'black', width: '55%', margin: '2rem 0' }}>
+                                paragraphConfig={{ textAlign: 'left', color: 'black', width: '97%', margin: '2rem 0' }}>
                                 A ausência de um suporte de segurança eficiente
                                 na administração de dados na nuvem esbarra
                                 em uma problemática vulnerabilidade das empresas.<br></br><br></br>
@@ -421,9 +424,9 @@ const GooglePage = () => {
                             <TitleGoogle
                                 title="Business"
                                 titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '4rem' }}
-                                paragraphConfig={{ textAlign: 'left', color: 'black' }}>
-                                Voltado para empresas de médio porte, a família<br></br>
-                                Business engloba uma estrutura propícia para<br></br>
+                                paragraphConfig={{ textAlign: 'left', color: 'black', width: '100%' }}>
+                                Voltado para empresas de médio porte, a família
+                                Business engloba uma estrutura propícia para
                                 a colaboração e defesa de dados.
                             </TitleGoogle>
                             <div className='div-flex5'>
@@ -433,7 +436,7 @@ const GooglePage = () => {
                             <TitleGoogle
                                 title="Enterprise"
                                 titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '6rem' }}
-                                paragraphConfig={{ textAlign: 'left', color: 'black', width: '60%', margin: '3rem 0' }}>
+                                paragraphConfig={{ textAlign: 'left', color: 'black', width: '100%', margin: '3rem 0' }}>
                                 Aconselhável para empresas de grande porte,
                                 a família Enterprise incorpora recursos para negócios
                                 dependentes de uma infraestrutura mais vigorosa.
@@ -465,7 +468,7 @@ const GooglePage = () => {
                             <TitleGoogle
                                 title="Cenários de comercialização"
                                 titleConfig={{ textAlign: 'left', color: '#ffff', marginTop: '6rem' }}
-                                paragraphConfig={{ textAlign: 'left', color: '#ffff', width: '66%', margin: '2rem 0' }}
+                                paragraphConfig={{ textAlign: 'left', color: '#ffff', width: '95%', margin: '2rem 0' }}
                                 spanClass='span-white'>
                                 Englobando seu atendimento tanto para os clientes que não utilizam o Workspace,
                                 quanto os que desejam dar um upgrade em sua contratação, dispomos de dois
@@ -542,12 +545,12 @@ const GooglePage = () => {
                                 <img src={happywoman} alt="" />
                                 <TitleGoogle
                                     title="Forma de pagamento"
-                                    titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '6rem' }}
-                                    paragraphConfig={{ textAlign: 'left', color: 'black' }}
+                                    titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '' }}
+                                    paragraphConfig={{ textAlign: 'left', color: 'black', marginTop: '1.5rem' }}
                                     spanClass='span-purple'>
                                     Com a parceria firmada com o Google, a Vivo conta com benefícios em relação à fatura
                                     do serviço, ofertando maior quantidade
-                                    de meios de pagamento e preços equivalentes ao mercado local.<br></br>
+                                    de meios de pagamento e preços equivalentes ao mercado local.
                                     <HorizontalAccordion />
                                 </TitleGoogle>
                             </div>

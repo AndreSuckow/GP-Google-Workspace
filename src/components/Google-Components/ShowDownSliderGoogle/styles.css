@@ -57,7 +57,9 @@
     border: solid;
 }
 
-
+.borderNone .show-down-slider .show-down-wrapper .slider.show .content-wrapper .content p {
+    border: none;
+}
 
 .show-down-slider .show-down-wrapper .slider.show .content-wrapper .content p {
     font-family: vivo-bold !important;

@@ -12,13 +12,6 @@ body {
     background: linear-gradient(180deg, rgba(103, 2, 154, 1) 0%, rgba(56, 0, 84, 1) 100%);
 }
 
-.logo img {
-    position: absolute;
-    width: 100%;
-    max-width: 20rem;
-    bottom: 5.5rem;
-    right: 39rem;
-}
 
 .click-expand-conceitos {
     display: block;
@@ -99,6 +92,10 @@ body {
 
 .div-flex3 .show-down-slider .show-down-wrapper {
     flex-wrap: nowrap !important;
+}
+
+.div-flex3 .modal-showDown img{
+    width: 10rem;
 }
 
 .div-flex4 {
@@ -296,6 +293,7 @@ body {
     font-weight: 800;
     margin-top: 5rem;
     font-size: 1.5rem !important;
+    text-align: center;
 }
 
 .span-green {
@@ -417,6 +415,10 @@ body {
     width: 15.5rem;
 }
 
+.div-mae-flex3 .modal-showDown img {
+    width: 10rem;
+}
+
 .div-flex-eficiencia {
     margin-top: 4rem;
     display: flex;
@@ -505,6 +507,19 @@ body {
     -webkit-box-shadow: 5px 5px 7px #b140f1;
     -moz-box-shadow: 5px 5px 7px #b140f1;
     box-shadow: 5px 5px 7px #b140f1;
+}
+
+.flex-atendimento2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 6rem;
+}
+
+
+.flex-atendimento2 img{
+    width: 34.3%;
 }
 
 
@@ -600,4 +615,22 @@ section>.bottom-line {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.borderNone{
+    border: none;
+}
+
+@media (max-width: 792px){
+    html {
+        font-size: 61.875% !important;
+    }
+
+    .logo img {
+        left: 7% !important;
+    }
+
+    img.retranca {
+        width: 25% !important;
+    }
 }

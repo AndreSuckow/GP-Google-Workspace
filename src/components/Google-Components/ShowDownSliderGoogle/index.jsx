@@ -10,6 +10,7 @@ import { width } from '@mui/system';
 Modal.setAppElement('#root')
 
 const ShowDownSliderGoogle = ({ data }) => {
+    console.log(data)
     const [modal, setModal] = useState(false)
     const [activeModal, setActiveModal] = useState(null);
 

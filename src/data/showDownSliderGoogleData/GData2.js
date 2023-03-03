@@ -18,6 +18,7 @@ const data = [
             'Minimalista'
         ],
         modal: {
+            imgSize: '10rem',
             isBigModal: false,
             image: imgModal1,
             title: 'Minimalista e robusto',
@@ -34,6 +35,7 @@ const data = [
             'Inteligência Artificial'
         ],
         modal: {
+            imgSize: '10rem',
             isBigModal: false,
             image: imgModal2,
             title: 'Inteligência Artificial Nativa',
@@ -52,6 +54,7 @@ const data = [
             'Produtividade'
         ],
         modal: {
+            imgSize: '10rem',
             isBigModal: false,
             image: imgModal3,
             title: 'Produtividade e facilidade',
@@ -67,6 +70,7 @@ const data = [
             'Manutenção'
         ],
         modal: {
+            imgSize: '10rem',
             isBigModal: false,
             image: imgModal4,
             title: 'Manutenção Integrada',
