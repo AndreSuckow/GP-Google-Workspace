@@ -65,7 +65,7 @@
     pointer-events: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     .drag-and-drop-wrapper {
         flex-direction: column;
         margin-top: 6rem;

@@ -124,7 +124,7 @@ background-color: #41225c;
     font-size: 0.9rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     .flipcards-wrapper .flipcards-area {
         padding: 0;
     }

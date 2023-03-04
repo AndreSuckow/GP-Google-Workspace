@@ -56,7 +56,7 @@
     height: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     .vertical-accordion {
         flex-direction: column;
         margin: 0;

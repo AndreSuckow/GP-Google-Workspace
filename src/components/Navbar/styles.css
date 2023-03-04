@@ -142,7 +142,7 @@ nav .burger-bar.unclicked:nth-child(3) {
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     .menu {
         max-width: 15rem;
     }

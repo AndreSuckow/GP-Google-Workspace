@@ -15,7 +15,7 @@
     font-weight: 200;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     .title-subtitle-area {
         margin-top: 3rem;
     }

@@ -92,7 +92,7 @@
     font-size: 1.6rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     .tab-view {
         flex-direction: column;
         margin-bottom: 5rem;

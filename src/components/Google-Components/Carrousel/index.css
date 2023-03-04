@@ -1,5 +1,5 @@
 .carrousel {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     position: relative;
     background-color: #ffffff;
@@ -190,7 +190,7 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     .carrousel {
         width: 100%;
     }

@@ -1,6 +1,6 @@
 .modal-overlay {
   background-color: rgba(0,0,0,.5);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
   z-index: 100;
   position: fixed;
   top: 0;
@@ -40,6 +40,7 @@
   padding: .5rem 1rem;
   cursor: pointer;
   transition: .2s linear;
+  margin-top: 1vw;
 }
 
 .modal-content button.close:hover {
@@ -70,6 +71,6 @@
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
   
 }

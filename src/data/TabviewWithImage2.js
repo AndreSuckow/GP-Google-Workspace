@@ -65,7 +65,7 @@ export const TabviewWithImageData2 = [
     },
     {
         icon: Icon19,
-        title: 'Sinergia',
+        title: 'Controle',
         text: `O Workspace também dispõe de aplicativos capazes de complementar de maneira inteligente e integrável a outros serviços ofertados, diferentes possibilidades de uso de seus recursos.`,
         subTitle: 'Cloud Search',
         subText: `Ferramenta para buscar, identificar, preservar, exportar e compartilhar dados, como mensagens, e-mails e arquivos.`,

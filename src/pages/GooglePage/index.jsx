@@ -58,7 +58,7 @@ import manLaptop from '../../assets/images/google/workspace/dlp/manLaptop.png'
 import WomanCel from '../../assets/images/google/workspace/publicoAlvo/woman.png'
 
 import Video from '../../components/Google-Components/Video';
-// import videoSource from '../../assets/videos/googleworkspace.mp4'
+import videoSource from '../../assets/videos/video.mp4'
 import assistaAoVideo from '../../assets/images/google/workspace/publicoAlvo/assistaAoVideo.png'
 
 // Impacto econômico --> carrousel horizontal 5
@@ -372,7 +372,7 @@ const GooglePage = () => {
                                 Workspace pode se tornar um <span className='span-green'>aliado produtivo</span>?
                             </p>
                             <div className='video'>
-                                <Video source={''}></Video>
+                                <Video source={videoSource}></Video>
                                 <img src={assistaAoVideo} alt="" />
                             </div>
 
@@ -408,7 +408,7 @@ const GooglePage = () => {
                                 titleConfig={{ textAlign: 'center', color: '#b3d683', marginTop: '4rem' }}
                                 paragraphConfig={{ textAlign: 'center', color: '#ffff', width: '100%'}}
                                 spanClass='span-green'>
-                                Distribuído em planos mensais ou anuais, as ofertas do Workspace são separadas pelas seguintes famílias:Business e Enterprise.<br></br><br></br>
+                                Distribuído em planos mensais ou anuais, as ofertas do Workspace são separadas pelas seguintes famílias: Business e Enterprise.<br></br><br></br>
 
                                 Conheça as divisões no quadro abaixo:<br></br><br></br>
                             </TitleGoogle>
@@ -504,7 +504,7 @@ const GooglePage = () => {
                             <TitleGoogle
                                 title="Vivo é a Solução!"
                                 titleConfig={{ textAlign: 'center', color: '#ffff', marginTop: "4rem" }}
-                                paragraphConfig={{ textAlign: 'left', color: '#ffff', width: '76%', margin: '2rem 0'}}
+                                paragraphConfig={{ textAlign: 'left', color: '#ffff', width: '100%', margin: '2rem 0'}}
                                 spanClass='span-white'>
 
                                 Pioneira no oferecimento de pacotes de internet para telefonia celular, a Vivo atua no Brasil desde 2003, sendo reconhecida por sua entrega de qualidade e competência. Referência em transformação digital, aumentou seu portfólio de acordo com as evoluções tecnológicas e a percepção das dores do mercado.
@@ -520,7 +520,7 @@ const GooglePage = () => {
                             <div className='flex-atendimento'>
                                 <TitleGoogle
                                     title="Atendimento"
-                                    titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '6rem' }}
+                                    titleConfig={{ textAlign: 'left', color: '#660099', marginTop: '2rem' }}
                                     paragraphConfig={{ textAlign: 'left', color: 'black', width: '100%', margin: '2rem 0' }}
                                     spanClass='span-purple'>
 
@@ -541,6 +541,7 @@ const GooglePage = () => {
                                 </TitleGoogle>
                                 <img src={happyman} alt="" />
                             </div>
+                            <ClickTip text='Clique nos ícones para expandir as informações.' center />
                             <div className='flex-atendimento2'>
                                 <img src={happywoman} alt="" />
                                 <TitleGoogle
@@ -554,7 +555,7 @@ const GooglePage = () => {
                                     <HorizontalAccordion />
                                 </TitleGoogle>
                             </div>
-                            <ClickTip text='Clique nos ícones para expandir as informações.' center />
+                            
                         </Container>
                     </Section>
                     <Section>

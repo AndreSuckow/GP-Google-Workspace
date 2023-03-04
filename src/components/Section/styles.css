@@ -20,7 +20,7 @@ section > .bottom-line {
     left: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     section > .section-mask {
         padding-bottom: 4rem;
     }

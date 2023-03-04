@@ -75,7 +75,7 @@
     transform: translateX(100%) translatey(-50%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     .timeline-wrapper .carousel {
         width: 80%;
     }

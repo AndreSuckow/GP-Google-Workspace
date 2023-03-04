@@ -27,7 +27,7 @@
     font-size: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 668px) {
     .scrollable-wrapper {
         flex-direction: column;
     }

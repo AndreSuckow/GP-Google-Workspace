@@ -370,7 +370,7 @@ body {
 }
 
 .div-flex5 .carrousel {
-    width: 75%;
+    width: 90%;
 }
 
 .estilo1 .item-content {
@@ -434,8 +434,6 @@ body {
 
 .div-flex-eficiencia .carrousel.estilo1 {
     width: 100%;
-    height: 50vw;
-    overflow: hidden;
 }
 
 .div-flex-eficiencia .estilo1 .item-content {
@@ -449,11 +447,12 @@ body {
 
 .div-flex-eficiencia .estilo1 .item-content p {
     font-family: 'officina';
-    font-size: 1.2rem !important;
+    font-size: 1.28rem !important;
     color: #000;
     font-weight: 100;
-    width: 85%;
-    margin: 1rem 1rem 3rem;
+    width: 90%;
+    margin: 0;
+    padding: 0.8rem 0;
 }
 
 .div-flex-eficiencia .estilo1 .item-content h3 {
@@ -471,18 +470,17 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 2vw;
 }
 
 /* pra baixo / avança */
 .div-flex-eficiencia .carrousel .controls button.next {
-    width: 3rem;
-    transform: rotateZ(96deg) !important;
+    width: 2.5rem;
+    transform: rotateZ(94deg) !important;
 }
 
 /* pra cima / retrocede */
 .div-flex-eficiencia .carrousel .controls button.prev {
-    width: 3rem;
+    width: 2.5rem;
     transform: rotateZ(90deg) !important;
 }
 
@@ -514,7 +512,7 @@ body {
     align-items: flex-start;
     justify-content: center;
     gap: 5rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
 }
 
 
@@ -626,11 +624,50 @@ section>.bottom-line {
         font-size: 61.875% !important;
     }
 
+    .container{
+        width: 90%;
+    }
+
     .logo img {
         left: 7% !important;
+        top: 25%;
     }
 
     img.retranca {
         width: 25% !important;
     }
+
+    .circular-carrousel .content .wrapper{
+        margin: 12rem 0 12rem 0vw;
+    }
+
+    .circular-carrousel .text-area .controls{
+        right: 15%;
+    }
+
+    .circular-carrousel .text-area .controls p {
+        margin-left: 1.5vw;
+    }
+
+    .dlp-wrapper .clickSetasFix{
+        width: 45%;
+    }
+
+    .div-flex img {
+        width: 43%;
+    }
+
+    .div-flex4b{
+        width: 90%;
+    }
+
+    .clickSetasFix, .clickSetasFix2{
+        width: 30%;
+    }
+    
+    .flex-atendimento2 img {
+        width: 36.3%;
+    }
+
+
 }
